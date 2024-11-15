@@ -1,0 +1,27 @@
+#opening the file
+with open("file name","modeName"):
+    -----------------------------
+    identation block
+
+varname=open("fileName","mode name")
+-------------------------
+varname.closed
+------------------------------------------------------------------------------
+
+#write the file
+1.write
+filePointer.write(str(Data))
+
+2.writelines
+filePointer.writelines(str(iterable-object))
+-------------------------------------------------------
+
+#reding the file
+1.read----<class,str>
+Syntax:
+       varname=filePointerobj.read()
+
+1.readLines-----<class,list>
+Syntax:
+       varname=filePointerobj.readlines()
+------------------------------------------------------------------     
