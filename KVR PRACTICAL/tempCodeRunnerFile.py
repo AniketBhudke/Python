@@ -1,5 +1,2 @@
-
-# for val in sample:
-#     a=str(val)
-# print(a)    
-    
+dict1.index(14)
+# print(dict1)

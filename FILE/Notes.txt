@@ -2,6 +2,7 @@
 with open("file name","modeName"):
     -----------------------------
     identation block
+-------------------------------------------------
 
 varname=open("fileName","mode name")
 -------------------------

@@ -114,30 +114,38 @@
 
 
 
-d1={11:"one",12:"two",13:"three",14:"four"}
-d1[0]="hvcfqy"
-print(d1)
-
-d1[11]="uhdyfd"
-print(d1)
-
-# d1.clear()
+# d1={11:"one",12:"two",13:"three",14:"four"}
+# d1[0]="hvcfqy"
 # print(d1)
 
-d1.pop(12)
-print(d1)
+# d1[11]="uhdyfd"
+# print(d1)
 
-d2=d1.copy()
-print(d2)
+# # d1.clear()
+# # print(d1)
 
-d2.popitem()
-print(d2)
+# d1.pop(12)
+# print(d1)
 
-val=d2.get(13)
-print(val)
+# d2=d1.copy()
+# print(d2)
 
-ks=d1.keys()
-print(ks)
+# d2.popitem()
+# print(d2)
 
-vs=d1.values()
-print(vs) 
+# val=d2.get(13)
+# print(val)
+
+# ks=d1.keys()
+# print(ks)
+
+# vs=d1.values()
+# print(vs) 
+
+dict1=[{11:"Eleven"},{12:"Tweleve"},{13:"thirteen"},{14:"Fourteen"},{15:"Fifteen"}]
+dlt=int(input("Enter A deleted Key:"))
+for dicts in dict1:
+    for keys,values in dicts.items():
+        if keys==dlt:
+            dicts.pop(dlt)
+print(dict1)

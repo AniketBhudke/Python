@@ -1184,7 +1184,7 @@ print(1 in {1,2,4,6})
 #in operator
 # syntax:-value in iterable object
 
-print(1 in {1,2,4,6})
+# print(1 in {1,2,4,6})
 
 
 
@@ -1247,18 +1247,62 @@ print(1 in {1,2,4,6})
 
 #exception handling
 
-try:
-    a=int(input("Enter 1st value:"))
-    b=int(input("Enter 2nd value:"))
-    c=a/b  
-except ValueError:
-    print("please eneter integer input:") 
-except ZeroDivisionError:
-    print("Enter a non zero value")      
-else:
-    print(c)
-finally:
-    print("Program Exceution ended")       
+# try:
+#     a=int(input("Enter 1st value:"))
+#     b=int(input("Enter 2nd value:"))
+#     c=a/b  
+# except ValueError:
+#     print("please eneter integer input:") 
+# except ZeroDivisionError:
+#     print("Enter a non zero value")      
+# else:
+#     print(c)
+# finally:
+#     print("Program Exceution ended")       
+
+#exception handling
+
+# try:
+#     a=int(input("Enter 1st number"))
+#     b=int(input("Enter 2nd number"))
+#     c=a/b
+
+# except ValueError:
+#     print("Don't Enter Alnums ,Stars and Symbols..!")
+# except ZeroDivisionError:
+#     print(f"dont enter zero")    
+# else:
+#     print(f"sum={c}")
+# finally:
+#     print("Program Excution Successfully..!")
 
 
-ata bg titha gelo ki me DOM shikato mag tulasgto its okay then react
+# try:
+#     a=int(input("Enter 1st number"))
+#     b=int(input("Enter 2nd number"))
+#     c=a/b
+# except :#default exception block
+#     print(f"Oops something went wrong")    
+# else:
+#     print(f"sum={c}")
+# finally:
+#     print("Program Excution Successfully..!")
+
+
+# try:
+#     a=int(input("Enter 1st number"))
+#     b=int(input("Enter 2nd number"))
+#     c=a/b
+#     a="sanika"
+#     print(a[10])
+# except ValueError:
+#     print("Don't Enter Alnums ,Stars and Symbols..!")
+# except ZeroDivisionError:
+#     print(f"dont enter zero")  
+# except :#default exception block
+#     print(f"Oops something went wrong")    
+# else:
+#     print(f"sum={c}")
+# finally:
+#     print("Program Excution Successfully..!")
+

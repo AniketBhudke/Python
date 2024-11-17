@@ -356,24 +356,81 @@ lst2=[12,23,434,56,78,90]
 # 	Sample data : Missing values in second list: b,a,c
 # 	Additional values in second list: g,h
 # 43. Write a Python program to split a list into different variables. 
-lst=[1,3,44,55,666,77,88,99]
-
-b=lst.split("33")
-print(b)
+        
 
 # 44. Write a Python program to generate groups of five consecutive numbers in a list. 
+# lst=[]
+# while len(lst)!=5:
+#     a=int(input("Enter a Number:"))
+#     lst.append(a)
+# print(lst)    
 
 # 45. Write a Python program to convert a pair of values into a sorted unique array. 
+# lst=[]
+# while(len(lst)!=2):
+#     a=int(input("Enter a Number:"))
+#     lst.append(a)
+# lst1=[]
+# for val in lst:
+#     if val not in lst1:
+#         lst1.append(val)              
+# else:
+#     lst.sort()
+#     print(lst)
+# print(lst1) 
+
 
 # 46. Write a Python program to select the odd items of a list. 
+# lst=[1,2,3,5,4,8,7,6]
+# odd_lst=[]
+# for val in lst:
+#     if val%2!=0:
+#         odd_lst.append(val)
+# print(odd_lst)        
+
 
 # 47. Write a Python program to insert an element before each element of a list.
+# lst=[2,3,4,5,6,7,8]
+# lst1=[]
+# for i in range (len(lst)):
+#     value=int(input("Enter A Number:"))
+#     lst1.append(lst[i])
+#     lst1.append(value)
+# print(lst1)
 
-# 48. Write a Python program to print a nested lists (each list on a new line) using the print() function. 
+
+# 48. Write a Python program to print a nested lists (each list on a new line) using the print() function.
+# lst=[[1,2,3],[4,5,6],[7,8,9]] 
+# for val in lst:
+#     print(val)
 
 # 49. Write a Python program to convert list to list of dictionaries.
 # Sample lists: ["Black", "Red", "Maroon", "Yellow"], ["#000000", "#FF0000", "#800000", "#FFFF00"]
 # Expected Output: [{'color_name': 'Black', 'color_code': '#000000'}, {'color_name': 'Red', 'color_code': '#FF0000'}, {'color_name': 'Maroon', 'color_code': '#800000'}, {'color_name': 'Yellow', 'color_code': '#FFFF00'}]
+# k=["Black", "Red", "Maroon", "Yellow"]
+# dict1={}
+# v=["#000000", "#FF0000", "#800000", "#FFFF00"]
+# for k1,v1 in zip (k,v):
+#     dict1[k1]=v1
+# print(dict1)    
+# dict1={'Black': '#000000', 'Red': '#FF0000', 'Maroon': '#800000', 'Yellow': '#FFFF00'}   
+# d={}
+# color=['color_name','color_code']
+# for k,v in dict1.items():
+#     for val in color:
+#         d[val]=k
+#         d[v]=val
+# print(d)    
+
+# k=["Black", "Red", "Maroon", "Yellow"]
+# v=["#000000", "#FF0000", "#800000", "#FFFF00"]
+# l1=[]
+# for i,j in zip(k,v):
+#     dict1={}
+#     dict1['color_name']=i
+#     dict1['color_code']=j
+#     l1.append(dict1)
+# print(l1)
 
 
 # 50. Write a Python program to sort a list of nested dictionaries. 
@@ -394,33 +451,132 @@ print(b)
 # Expected Output:
 # 	Color1-Color2: ['white', 'orange', 'red']
 # 	Color2-Color1: ['black', 'yellow']
+# sample=["red", "orange", "green", "blue", "white"]
+# sample2= ["black", "yellow", "green", "blue"]
+# color1_color2=[]
+# color2_color1=[]
+# for color in sample:
+#     if color not in sample2:
+#         color1_color2.append(color)
+# else:
+#     for color in sample2:
+#         if color not in sample:
+#           color2_color1.append(color)
+# print(color1_color2)
+# print(color2_color1)        
 
 
-# 53. Write a Python program to create a list with infinite elements. 
+# 53. Write a Python program to create a list with infinite elements.
+# lst=[] 
 
-# 54. Write a Python program to concatenate elements of a list. 
+# while(True):
+#     try:
+#         value=int(input("Enter A number:"))
+#         lst.append(value)
+#         print(lst)
+#     except ValueError:
+#         print("Dont Enter Alnums,Symbols and Strs")
+
+
+# 54. Write a Python program to concatenate elements of a list
+# l1=[1,2,3,4,5,6]
+# l2=[]
+# for i in l1:
+#     l2 += [i]
+# print(l2)
+ 
 
 # 55. Write a Python program to remove key values pairs from a list of dictionaries. 
+# dict1=[{11:"Eleven","name":"Harshal"},{12:"Tweleve","name":"Aniket"}]
+# key=(input("Enter A deleted Key:"))
+# val=(input("Enter A deleted Key:"))
+# for dicts in dict1:
+#     val=dicts.keys()
+#     if val == dlt:
+#         dicts.pop(val)
+#     print(dicts)
 
+# for dict in dict1:
+#         if dict[key]==val:
+#             del dict[key]
+# print(dict1)
 # 56. Write a Python program to convert a string to a list. 
+# s="Aniket"
+#logic 1
+# print(list(s))
 
-# 57. Write a Python program to check if all items of a given list of strings is equal to a given string. 
+#logic 2
+# lst=[]
+# for i in range(len(s)):
+#     lst.append(s[i])
+# print(lst)    
+
+# 57. Write a Python program to check if all items of a given list of strings is equal to a given string.
+# a="aniket"
+# b="Vishal"
+
+# print(a==b) 
+
+# lst_same=[]
+# for i in range(len(a)):
+#     for j in range(len(b)):
+#         if a[i]==b[j]:
+#             lst_same.append(a[i])
+# print(f"{lst_same}are same in two String")
+           
 
 # 58. Write a Python program to replace the last element in a list with another list. 
 # 	Sample data : [1, 3, 5, 7, 9, 10], [2, 4, 6, 8]
 # 	Expected Output: [1, 3, 5, 7, 9, 2, 4, 6, 8]
+# Sample_data =[1, 3, 5, 7, 9, 10]
+# Sample_data1=[2, 4, 6, 8]
+# #logic 1
+# Sample_data.extend(Sample_data1)
+# print(Sample_data)
+
+#logic 2
+# print(Sample_data+Sample_data1)
 
 
-# 59. Write a Python program to check whether the n-th element exists in a given list. 
+# 59. Write a Python program to check whether the n-th element exists in a given list.
+# n_th=int(input("Enter a number:")) 
+# lst=[11,22,43,5,6,78,86]
+# if n_th in lst:
+#     print("Your n-th value Present in list")
+# else:
+#     print("Your n-th value Not Present in list")
+
 
 # 60. Write a Python program to find a tuple, the smallest second index value from a list of tuples.
+# lst=[1,11,2,12,14,445,444,5,77]
+# higest=1
+# Second_higest=4
+# for value in lst:
+#     if value>higest:
+#         higest=value
+#     if Second_higest<value<higest:
+#         Second_higest=value
+#         a=lst.index(value)
+# print(Second_higest)
+# print("Index of second higest Element is=",a) 
+
+        
+
 # 61. Write a Python program to create a list of empty dictionaries. 
+
 
 # 62. Write a Python program to print a list of space-separated elements.
 
 # 63. Write a Python program to insert a given string at the beginning of all items in a list.
 # 	Sample list : [1,2,3,4], string : emp
 # 	Expected output : ['emp1', 'emp2', 'emp3', 'emp4']
+# Sample = [1,2,3,4]
+# s="emp"
+# ex=[]
+# for val in Sample:
+#     e=s+str(val)
+#     ex.append(e)
+# print(ex)   
 
 # 64. Write a Python program to iterate over two lists simultaneously.
 
@@ -430,6 +586,14 @@ print(b)
 # 	[3, 4, 0, 0, 0, 6, 2, 0, 6, 7, 6, 0, 0, 0, 9, 10, 7, 4, 4, 5, 3, 0, 0, 2, 9, 7, 1]
 # 	Move all zero digits to end of the said list of numbers:
 # 	[3, 4, 6, 2, 6, 7, 6, 9, 10, 7, 4, 4, 5, 3, 2, 9, 7, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+lst=[3, 4, 0, 0, 0, 6, 2, 0, 6, 7, 6, 0, 0, 0, 9, 10, 7, 4, 4, 5, 3, 0, 0, 2, 9, 7, 1]
+lst1=[]
+for value in lst:
+    if value ==0:
+        lst.insert(-1,0)
+print(lst)
+print(lst1)
 
 # 66. Write a Python program to find the list in a list of lists whose sum of elements is the highest. 
 # 	Sample lists: [1,2,3], [4,5,6], [10,11,12], [7,8,9]

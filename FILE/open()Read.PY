@@ -1,4 +1,4 @@
-# #read mode----bu using open()
+# # #read mode----bu using open()
 # try:
 #     kv=open("stude1.data",'r')
 #     print("file Opend in Read Mode Successfully")
@@ -13,7 +13,7 @@
 #     print("File not Found ")    
 
 try:
-    kv=open("s.data",'r')
+    kv=open("s1.data",'r')
     print("file Opend in Read Mode Successfully")
 except FileNotFoundError:
     print("File not Found ")
