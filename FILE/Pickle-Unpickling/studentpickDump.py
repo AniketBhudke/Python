@@ -10,8 +10,4 @@ def studentData():
         l.append(StudentMrk)
         pickle.dump(l,fp)
         
-
-
-
-
 studentData()

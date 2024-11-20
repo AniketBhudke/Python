@@ -1306,3 +1306,44 @@ print(1 in {1,2,4,6})
 # finally:
 #     print("Program Excution Successfully..!")
 
+# from sanika1 import ZeroDivisionError,ValueError
+# def divisionop(a,b):
+#     if b==0:
+#         raise ZeroDivisionError 
+#     elif type(a)==str or type(b)==str:
+#         raise ValueError
+#     else :
+#         return a/b
+
+# from sanika1 import negativeNumberError,ValueError
+
+# def multiplication(a,b):
+#     if a<=0 or b<=0 :
+#         raise negativeNumberError
+#     elif type(a)==str or type(b)==str:
+#         raise ValueError
+#     else:
+#         return a*b
+
+# with open("sanu13.data",'+x')as fp:
+#     print(fp)
+#     a=input("Entera number:")
+#     fp.write(str(a))
+#     ani=fp.read()
+#     print(ani)
+#     print("file cloesd",fp.closed)    
+#     print("file is readable",fp.readable())
+#     print(fp.name)
+# print("File closed=",fp.closed)    
+
+
+# var= open("sanu1.data",'w')
+# print(var)
+# print("file cloesd",var.closed)
+# var.close()
+# print("File closed=",var.closed)    
+
+with open ("sanu.data",'r')as fp:
+    fp.seek(7)
+    filedata=fp.read(16)
+    print(filedata)

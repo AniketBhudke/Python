@@ -1,12 +1,15 @@
 #
-# try:
-#     with open("aniket.data","r") as fp:
-#         filedata=fp.read()
-#         print(filedata)
-# except  FileNotFoundError:
-#     print("File not Found")
-# else:
-#     print("your Data Getting Successfully...!")      
+try:
+    with open("s.data","+a") as fp:
+        # fp.seek(4)
+        # filedata=fp.readline(10)
+        fp.seek(14)
+        filedata=fp.readline(10)
+        print(filedata)
+except  FileNotFoundError:
+    print("File not Found")
+else:
+    print("your Data Getting Successfully...!")      
 
 #from user input
 # try:
@@ -19,7 +22,8 @@
 
 #Program for Reading the Data continuously from Key Board and Write It to the File
 
-with open("aniket.data",'a')as fp:
-    filedata=input("Enter the data:")
-    fp.write(filedata)
+# with open("reading.py",'a')as fp:
+#     filedata=input("Enter the data:")
+#     fp.tell(10)
+#     fp.write(filedata)
     

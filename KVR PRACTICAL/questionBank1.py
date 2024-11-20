@@ -587,27 +587,53 @@ lst2=[12,23,434,56,78,90]
 # 	Move all zero digits to end of the said list of numbers:
 # 	[3, 4, 6, 2, 6, 7, 6, 9, 10, 7, 4, 4, 5, 3, 2, 9, 7, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-lst=[3, 4, 0, 0, 0, 6, 2, 0, 6, 7, 6, 0, 0, 0, 9, 10, 7, 4, 4, 5, 3, 0, 0, 2, 9, 7, 1]
-lst1=[]
-for value in lst:
-    if value ==0:
-        lst.insert(-1,0)
-print(lst)
-print(lst1)
+# lst=[3, 4, 0, 0, 0, 6, 2, 0, 6, 7, 6, 0, 0, 0, 9, 10, 7, 4, 4, 5, 3, 0, 0, 2, 9, 7, 1]
+# lst1=[]
+# for value in lst:
+#     if value ==0:
+#         lst.insert(-1,0)
+# print(lst)
+# print(lst1)
 
 # 66. Write a Python program to find the list in a list of lists whose sum of elements is the highest. 
 # 	Sample lists: [1,2,3], [4,5,6], [10,11,12], [7,8,9]
 # 	Expected Output: [10, 11, 12]
+# lst=[ [1,2,3], [4,5,6],[12,12,10], [10,11,12], [7,8,9]]
+# d1={}
+# for lists in lst:
+#     d1[sum(lists)]=lists
+# print(d1)
+# h=0
+# for k,v in d1.items():
+#     if k>h:
+#         h=k
+# print(h)        
+# print(d1[h])        
 
+    
 # 67. Write a Python program to find all the values in a list are greater than a specified number. 
 # 68. Write a Python program to extend a list without append.      
 # 	Sample data: [10, 20, 30]
 # 	[40, 50, 60]
 # 	Expected output : [40, 50, 60, 10, 20, 30]
 
+# lst=[10, 20, 30]
+# lst1=[40, 50, 60]
+# print(lst+lst1)
+
+
+
 # 69. Write a Python program to remove duplicates from a list of lists.      
 # 		Sample list : [[10, 20], [40], [30, 56, 25], [10, 20], [33], [40]]
 # 		New List : [[10, 20], [30, 56, 25], [33], [40]]
+# lst=[[10, 20], [40], [30, 56, 25], [10, 20], [33], [40]]
+# new_list=[]
+# for lists in lst:
+#     for ele in lists:
+#         if ele not in lst1:
+#             lst.remove(lists)
+# print(lst)                
+#[[10, 20], [40], [30, 56, 25], [20], [33], []]
 
 # 70. Write a Python program to find the items starts with specific character from a given list. 
 # 		Expected Output:
@@ -619,12 +645,37 @@ print(lst1)
 # 		['dagfa']
 # 		Items start with w from the said list:
 # 		[]
+# original=['abcd', 'abc', 'bcd', 'bkie', 'cder', 'cdsw', 'sdfsd', 'dagfa', 'acjd']
+# a_lst=[]
+# d_lst=[]
+# w_lst=[]
+# for string in original:
+#     if string.startswith('a'):
+#         a_lst.append(string)
+#     elif string.startswith('d'):   
+#         d_lst.append(string)
+#     elif string.startswith('w'):
+#         w_lst.append(string)
+# print(a_lst)
+# print(d_lst)
+# print(w_lst)        
+
 
 # 71. Write a Python program to check whether all dictionaries in a list are empty or not. 
 # 	Sample list : [{},{},{}]
 # 	Return value : True
 # 	Sample list : [{1,2},{},{}]
 # 	Return value : False
+sample= [{5},{},{}]
+count=0
+for dictionaries in sample:
+    if len(dictionaries) == 0 :
+        res="True"
+    else:
+        res="False"
+
+print(res)            
+
 
 # 72. Write a Python program to flatten a given nested list structure.
 # 		Original list: [0, 10, [20, 30], 40, 50, [60, 70, 80], [90, 100, 110, 120]]
