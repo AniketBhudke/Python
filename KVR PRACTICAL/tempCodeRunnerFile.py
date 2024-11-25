@@ -1,2 +1,2 @@
-dict1.index(14)
-# print(dict1)
+else:
+        lst1.append (element)

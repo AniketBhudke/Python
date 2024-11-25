@@ -225,8 +225,8 @@
 # print("Randomly selected item:", random_item)
 
 # 26. Write a python program to check whether two lists are circularly identical.
-# lst1=[11,12,13,14,15,15,16,17,18]
-# lst2=[11,12,13,14,15,15,16,17,18]
+# lst1=[11,12,13]
+# lst2=[11,12,13]
 # if lst1==lst2:
 #     print("it is identical element")
 # else:
@@ -444,7 +444,9 @@ lst2=[12,23,434,56,78,90]
 # 51. Write a Python program to split a list every Nth element. 
 # 	Sample list: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n']
 # 	Expected Output: [['a', 'd', 'g', 'j', 'm'], ['b', 'e', 'h', 'k', 'n'], ['c', 'f', 'i', 'l']]
-
+# sample=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n']
+# lst=[]
+# for i  in range()
 
 # 52. Write a Python program to compute the difference between two lists.      
 # Sample data: ["red", "orange", "green", "blue", "white"], ["black", "yellow", "green", "blue"]
@@ -563,6 +565,8 @@ lst2=[12,23,434,56,78,90]
         
 
 # 61. Write a Python program to create a list of empty dictionaries. 
+# l1 = [{} for i in range(1,11)]
+# print(l1)
 
 
 # 62. Write a Python program to print a list of space-separated elements.
@@ -666,32 +670,63 @@ lst2=[12,23,434,56,78,90]
 # 	Return value : True
 # 	Sample list : [{1,2},{},{}]
 # 	Return value : False
-sample= [{5},{},{}]
-count=0
-for dictionaries in sample:
-    if len(dictionaries) == 0 :
-        res="True"
-    else:
-        res="False"
+# sample= [{5},{},{}]
+# count=0
+# for dictionaries in sample:
+#     if len(dictionaries) == 0 :
+#         res="True"
+#     else:
+#         res="False"
 
-print(res)            
+# print(res)            
 
 
 # 72. Write a Python program to flatten a given nested list structure.
 # 		Original list: [0, 10, [20, 30], 40, 50, [60, 70, 80], [90, 100, 110, 120]]
 # 		Flatten list:
 # 		[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120]
+
+# lst=[]
+# original=[0, 10, [20, 30], 40, 50, [60, 70, 80], [90, 100, 110, 120]]
+# for value in original:
+#     if type(value)==int:
+#             lst.append(value)
+#     else:
+#         for element in value:
+#             lst.append(element)  
+# print(lst)              
+
 # 73. Write a Python program to remove consecutive duplicates of a given list. 
 # 		Original list:
 # 		[0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4]
 # 		After removing consecutive duplicates:
 # 		[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 4]
 
+# lst=[0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4]
+# l1 = []
+# for i in range(len(lst)):
+#     if len(l1)==0:  #l1 mde ele pahije mhanun eka element takala
+#         l1.append(lst[i])
+#     elif l1[-1]==lst[i]:
+#         pass
+#     else:
+#         l1.append(lst[i])
+# print(l1)       
+
 # 74. Write a Python program to pack consecutive duplicates of a given list elements into sublists.
 # 	Original list:
 # 	[0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4]
 # 	After packing consecutive duplicates of the said list elements into sublists:
 # 	[[0, 0], [1], [2], [3], [4, 4], [5], [6, 6, 6], [7], [8], [9], [4, 4]]
+# lst=[]
+# for i in range(4):
+#     l=[]
+#     for j in range(2):
+#         a=int(input("Enter A number:"))
+#         l.append(a)
+#     lst.append(l)
+# print(lst)
+
 
 # 75. Write a Python program to create a list reflecting the run-length encoding from a given list of integers or a given list of characters. 
 # 	Original list:
@@ -703,6 +738,20 @@ print(res)
 # 	List reflecting the run-length encoding from the said string:
 # 	[[1, 'a'], [1, 'u'], [1, 't'], [1, 'o'], [1, 'm'], [1, 'a'], [1, 't'], [1, 'i'], [1, 'c'], [1, 'a'], [2, 'l'], [1, 'y']]
 
+# l1 = [1, 1, 2, 3, 4, 4.3, 5, 1]
+# l2 = []
+# for i in range(len(l1)-1):
+#     l = []
+#     if l==
+
+
+
+
+
+
+
+
+
 # 76. Write a Python program to create a list reflecting the modified run-length encoding from a given list of integers or a given list of characters. 
 # 	Original list:
 # 	[1, 1, 2, 3, 4, 4, 5, 1]
@@ -712,12 +761,28 @@ print(res)
 # 	aabcddddadnss
 # 	List reflecting the modified run-length encoding from the said string:
 # 	[[2, 'a'], 'b', 'c', [4, 'd'], 'a', 'd', 'n', [2, 's']]
+# lst=[1, 1, 2, 3, 4, 4, 5, 1]
+# lst1=[]
+
+# for element in lst:
+#     if element in lst1:
+#         lst2=[]
+#         a=lst.count(element)
+#         lst2.append(a)
+#         lst2.append(element)
+#         lst1.append(lst2)    
+#     else:
+#         lst1.append (element)
+# print(lst1)           
+
+
 
 # 77. Write a Python program to decode a run-length encoded given list.
 # 	Original encoded list:
 # 	[[2, 1], 2, 3, [2, 4], 5, 1]
 # 	Decode a run-length encoded said list:
 # 	[1, 1, 2, 3, 4, 4, 5, 1]
+
 
 # 78. Write a Python program to split a given list into two parts where the length of the first part of the list is given. 
 # 	Original list:
@@ -726,15 +791,68 @@ print(res)
 # 	Splited the said list into two parts:
 # 	([1, 1, 2], [3, 4, 4, 5, 1])
 
+# lst=[1, 1, 2, 3, 4, 4, 5, 1]
+# l1=[]
+# lst1=[]
+# lst2=[]
+# l=0
+# for element in lst:
+#     if  l != 3:
+#         lst1.append(element)
+#         l=l+1
+#     else: 
+#         lst2.append(element)    
+# l1.append(lst1)
+# l1.append(lst2)
+# print(l1)
+
+#logic 2
+# lst=[]
+# first=3
+# original=[1, 1, 2, 3, 4, 4, 5, 1]
+# first_part=original[:first]
+# second_part=original[first:]
+# lst.append(first_part)
+# lst.append(second_part)
+# print(lst)
+
+
 # 79. Write a Python program to remove the K'th element from a given list, print the new list. Original list:
 # 	[1, 1, 2, 3, 4, 4, 5, 1]
 # 	After removing an element at the kth position of the said list:
 # 	[1, 1, 3, 4, 4, 5, 1]
+# original=[1, 1, 2, 3, 4, 4, 5, 1]
+
+# index=int(input("Enter A Index To Delete From list:"))
+
+# for i in range(len(original)):
+#     if i==index:
+#         original.pop(i)
+#     elif index > len(lst):
+#         print("Enter the Valid Index--Try Again")
+
+# print(original)    
+    
+
 # 80. Write a Python program to insert an element at a specified position into a given list. 
 # 	Original list:
 # 	[1, 1, 2, 3, 4, 4, 5, 1]
 # 	After inserting an element at kth position in the said list:
 # 	[1, 1, 12, 2, 3, 4, 4, 5, 1]
+
+# original=[1, 1, 2, 3, 4, 4, 5, 1]
+# index=int(input("Enter A Index To Delete From list:"))
+# num=int(input("Enter A number:"))
+# for i in range(len(original)):
+#     if i==index:
+#         original[i]=str(num) + str(original[i])
+#         original[i]=int(original[i])
+#     elif index > len(lst):
+#         print("Enter the Valid Index--Try Again")
+
+# print(original)
+
+
 
 # 81. Write a Python program to extract a given number of randomly selected elements from a given list. 
 # 	Original list:
@@ -742,30 +860,116 @@ print(res)
 # 	Selected 3 random numbers of the above list:
 # 	[4, 4, 1]
 
+# import random
+# Original=[1, 1, 2, 3, 4, 4, 5, 1]
+# lst=[]
+# for i in range(len(Original)):
+#     if len(lst)!=3:
+#         num=random.choice(Original)
+#         lst.append(num)   
+#     else:
+#         break 
+# print(lst)
+
+
 # 82. Write a Python program to generate the combinations of n distinct objects taken from the elements of a given list. 
 # HINT
 # Original list: [1, 2, 3, 4, 5, 6, 7, 8, 9] Combinations of 2 distinct objects: [1, 2] [1, 3] [1, 4] [1, 5] .... [7, 8] [7, 9] [8, 9]
+# import random
+# Original =[1, 2, 3, 4, 5, 6, 7, 8, 9]
+# lst=[]
+# for i in range(len(Original)):
+#     lst1=[]
+#     for j in range(1):
+#         lst1.append(Original[i])
+#         num=random.choice(Original)
+#         lst1.append(num)
+#     lst.append(lst1)
+# print(lst)        
 
 # 83. Write a Python program to round every number of a given list of numbers and print the total sum multiplied by the length of the list. 
 # 	Original list: [22.4, 4.0, -16.22, -9.1, 11.0, -12.22, 14.2, -5.2, 17.5]
 # 	Result:
 # 	243
-# 84. Write a Python program to round the numbers of a given list, print the minimum and maximum numbers and multiply the numbers by 5. Print the unique numbers in ascending order separated by space. 
+
+
+
+# import math
+# s=0
+# Original=[22.4, 4.0, -16.22, -9.1, 11.0, -12.22, 14.2, -5.2, 17.5]
+# for i in range(len(Original)):
+#     num=math.ceil(Original[i])
+#     s=s+num
+# print(f"sum={s * len(Original)}")    
+
+# 84. Write a Python program to round the numbers of a given list,
+#  print the minimum and maximum numbers and
+#  multiply the numbers by 5. 
+# Print the unique numbers in ascending order separated by space. 
 # 	Original list: [22.4, 4.0, 16.22, 9.1, 11.0, 12.22, 14.2, 5.2, 17.5]
 # 	Minimum value: 4
 # 	Maximum value: 22
 # 	Result:
 # 	20 25 45 55 60 70 80 90 110
 
+Original=[22.4, 4.0, 16.22, 9.1, 11.0, 12.22, 14.2, 5.2, 17.5]
+# l1 = [round(val) for val in Original]
+# maxi = max(l1)
+# mnni = min(l1)
+# print(l1,maxi,mnni,sep='\n')
+# l1.sort()
+# for i in l1:
+#     print(i*5,end=' ')
+
+# import math
+# lst=[]
+# max=1
+# min=24
+# for i in range(len(Original)):
+#     num=math.floor(Original[i])
+#     lst.append(num)
+# print(lst)
+
+# for i in range(len(lst)):
+#     if lst[i]>max:
+#         max=lst[i]
+#     elif lst[i]<min:
+#         min=lst[i]
+# print(max,min)            
+
+# lst1=[val*5 for val in lst]
+# lst1.sort()
+# for value in lst1:
+#     print(value,end='  ')
+
 # 85. Write a Python program to create a multidimensional list (lists of lists) with zeros. 
 # Multidimensional list: [[0, 0], [0, 0], [0, 0]]
+# lst=[]
+# for i in range(6):
+#     lst1=[]
+#     for j in range(2):
+#         a=0
+#         lst1.append(a)
+#     lst.append(lst1)
+# print(lst)        
 
 
 # 86. Write a Python program to create a 3X3 grid with numbers.
 # 	3X3 grid with numbers:
 # 	[[1, 2, 3], [1, 2, 3], [1, 2, 3]]
 
-# 87. Write a Python program to read a matrix from console and print the sum for each column. Accept matrix rows, columns and elements for each column separated with a space(for every row) as input from the user. 
+# lst=[]
+# for i in range(3):
+#     lst1=[]
+#     for j in range(1,4):
+#         lst1.append(j)
+#     lst.append(lst1)
+# print(lst)        
+
+
+# 87. Write a Python program to read a matrix from console and 
+# print the sum for each column. 
+# Accept matrix rows, columns and elements for each column separated with a space(for every row) as input from the user. 
 # 	Input rows: 2
 # 	Input columns: 2
 # 	Input number of elements in a row (1, 2, 3):
@@ -773,8 +977,27 @@ print(res)
 # 	3 4
 # 	sum for each column:
 # 	4 6
+#[[1,2,3],[1,2,3],[1,2,3],[1,2,3]]  column=3 , row=4
+# row=int(input("Enter A How Many Rows You  want to insert:"))
+# column=int(input("Enter A How Many Columns You  want to insert:"))
+# first_num_sum=0
+# second_num_sum=0
+# outer_list=[]
+# for i in range(row):
+#     inner_list=[]
+#     for j in range(column):
+#         num=int(input("Enter a number:"))
+#         inner_list.append(num)
+#     outer_list.append(inner_list)
+#     first_num_sum=first_num_sum+inner_list[0]
+#     second_num_sum=second_num_sum+inner_list[1]
+# print(outer_list)        
+# print(first_num_sum,second_num_sum)
 
-# 88. Write a Python program to read a square matrix from console and print the sum of matrix primary diagonal. Accept the size of the square matrix and elements for each column separated with a space (for every row) as input from the user. 
+
+# 88. Write a Python program to read a square matrix from console and print the sum of matrix primary diagonal.\
+#  Accept the size of the square matrix and elements for each column separated with a space (for every row) as 
+# input from the user. 
 # 	Input the size of the matrix: 3
 # 	2 3 4
 # 	4 5 6
@@ -782,12 +1005,36 @@ print(res)
 # 	Sum of matrix primary diagonal:
 # 	14
 
+# outer_list=[]
+# sum_diagonal_element=0
+# for i in range(3):
+#     inner_list=[]
+#     for j in range(3):
+#         a=int(input("Enter A Number:"))
+#         inner_list.append(a)
+#     outer_list.append(inner_list)
+#     sum_diagonal_element=sum_diagonal_element+inner_list[i]
+# print(sum_diagonal_element)    
+# print(outer_list)        
+
+
 # 89. Write a Python program to Zip two given lists of lists. 
 # 	Original lists:
 # 	[[1, 3], [5, 7], [9, 11]]
 # 	[[2, 4], [6, 8], [10, 12, 14]]
 # 	Zipped list:
 # 	[[1, 3, 2, 4], [5, 7, 6, 8], [9, 11, 10, 12, 14]]
+# lst=[[1, 3], [5, 7], [9, 11]]
+# lst1=[[2, 4], [6, 8], [10, 12, 14]]
+# lst2=[]
+# for k,v in zip(lst,lst1):
+#     a=k+v
+#     lst2.append(a)
+# print(lst2)
+
+
+    
+
 # 90. Write a Python program to count number of lists in a given list of lists. 
 # 		Original list:
 # 		[[1, 3], [5, 7], [9, 11], [13, 15, 17]]
@@ -797,6 +1044,13 @@ print(res)
 # 		[[2, 4], [[6, 8], [4, 5, 8]], [10, 12, 14]]
 # 		Number of lists in said list of lists:
 # 		3
+
+# lst=[[1, 3], [5, 7], [9, 11], [[13, 15, 17],[1,2,3]],[11,22,33]]
+# count=0
+# for lists in lst:
+#     count=count+1
+# print(count)    
+
 
 # 91. Write a Python program to find the list with maximum and minimum length. 
 # 	Original list:
@@ -817,6 +1071,16 @@ print(res)
 # 	(4, [1, 34, 5, 7])
 # 	List with minimum length of lists:
 # 	(1, [12])
+
+# lst=[[12], [1, 3], [1, 34, 5, 7], [9, 11], [3, 5, 7]]
+# largest=0
+# lst=[]
+# for lists in lst:
+#     if len(lists)>largest:
+#         largest=len(lists)
+#         # lst=lists
+# print(largest)
+
 
 # 92. Write a Python program to check if a nested list is a subset of another nested list. 
 # 		Original list:
@@ -889,10 +1153,30 @@ print(res)
 # 	Maximum and Minimum values in the said list:
 # 	(5, 2)
 
-# 100. Write a Python program to extract common index elements from more than one given list. 
-# 	Original lists:
-# 	[1, 1, 3, 4, 5, 6, 7]
-# 	[0, 1, 2, 3, 4, 5, 7]
-# 	[0, 1, 2, 3, 4, 5, 7]
-# 	Common index elements of the said lists:
-# 	[1, 7]
+
+#
+# def Second_maximumn(lst):#[12,3,4,10,44,56,9,78]
+#     max_number=max(lst)#78
+#     max_count=lst.count(max_number)
+#     print(max_count)
+#     if max_count == len(lst):
+#         return None
+#     Second_max_number=max_count + 1
+
+# Second_maximumn([12,3,4,5])   
+
+
+# lst=[12,3,4,5,55,77,89]
+# second_largest=5
+# largest=max(lst)
+# for value in lst:
+#     if largest>value>second_largest and len(value) !=1 and lst.count(value)==1:
+#         second_largest=value
+#     elif lst.count(value) >=2:
+#         print("None")
+#     elif len(lst) ==1:
+#         print("None")
+# print(second_largest)            
+
+
+

@@ -124,22 +124,22 @@
 # print(t1)
 #------------------------------------------------------------------------------
 
-def decideprime(val):
-    res="it is prime"
-    for i in range(2,val):
-        if(val%i==0):
-            res="Not"
-            break
-    return res
+# def decideprime(val):
+#     res="it is prime"
+#     for i in range(2,val):
+#         if(val%i==0):
+#             res="Not"
+#             break
+#     return res
 
-#Main Program
-print("Enter List of Values Seeperated by space:")
-vals=[int(val) for val in input().split() if int(val)>1]
+# #Main Program
+# print("Enter List of Values Seeperated by space:")
+# vals=[int(val) for val in input().split() if int(val)>1]
 
-primes=[ val   for val in vals  if decideprime(val) ]
+# primes=[ val   for val in vals  if decideprime(val) ]
 
-print("List of Given Values:{}".format(vals))
-print("List of Primes:{}".format(primes))
+# print("List of Given Values:{}".format(vals))
+# print("List of Primes:{}".format(primes))
 
 # #----------------------------------------------------------------
 # def decideprime(val):
@@ -157,3 +157,45 @@ print("List of Primes:{}".format(primes))
 # print("List of Given Values:{}".format(vals))
 # print("List of Primes:{}".format(primes))
 # #--------------------------------------------------------
+
+
+# lst1=[int(value) for value in input().split() if int(value)>3]
+# print(lst1)
+
+# dict1={int(val):int(val)*2 for val in input().split()}
+# print(dict1)
+
+#simple program
+# addop=lambda a,b:a+b
+
+# a=int(input("Enter a 1st Value:"))
+# b=int(input("Enter a 2nd Value:"))
+# res=addop(a,b)
+# print(res)
+
+#filter
+# ab=lambda val:val
+
+# lst=[int(value) for value in input().split()]
+# res=list(filter(ab,lst))
+# print(res)
+
+# odd=lambda val :val%2!=0
+
+# lst=[int(value) for value in input().split() if int(value)>0]
+# a=list(filter(odd,lst))
+# print(a)
+
+odd=lambda value : value %2 == 0 
+
+lst=[1,2,3,4]
+a=list(filter(lambda value :  value %2 == 0 ,lst))
+print(a)
+
+# odd = lambda value: value % 2 == 0
+
+# lst = [int(value) for value in input().split()]
+# a = list(filter(odd, lst))
+# print(a)
+
+
