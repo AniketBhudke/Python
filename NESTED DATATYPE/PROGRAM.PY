@@ -184,5 +184,5 @@
 
 
 # t1 = (1,2,3,341)
-import oracledb
-print(oracledb.__version__)
+# import oracledb
+print('oracledb.__version__')

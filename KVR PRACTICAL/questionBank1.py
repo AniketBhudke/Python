@@ -1112,6 +1112,27 @@ Original=[22.4, 4.0, 16.22, 9.1, 11.0, 12.22, 14.2, 5.2, 17.5]
 # 		3
 # 		Count 'E' in the said list:
 # 		1
+# lst=[[11, 3], [5, 7], [1, 11], [1, 15, 7]]
+# count_1=0
+# count_7=0
+# for ineer_list in lst:
+#     for val in ineer_list:
+#         if val==1:
+#             count_1=count_1+1
+#         elif val==7:
+#             count_7=count_7+1
+# print(count_1,count_7)    
+
+# lst=[['A', 'B'], ['A', 'C'], ['A', 'D', 'E'], ['B','E','E', 'C', 'D']]
+# word_A=0
+# word_E=0
+# for inner_list in lst:
+#     for word in inner_list:
+#         if word=="A":
+#             word_A=word_A+1
+#         elif word=='E':
+#             word_E=word_E+1 
+# print(word_E,word_A)               
 
 # 94. Write a Python program to count number of unique sublists within a given list. 
 # 	Original list:
@@ -1122,6 +1143,8 @@ Original=[22.4, 4.0, 16.22, 9.1, 11.0, 12.22, 14.2, 5.2, 17.5]
 # 	[['green', 'orange'], ['black'], ['green', 'orange'], ['white']]
 # 	Number of unique lists of the said list:
 # 	{('green', 'orange'): 2, ('black',): 1, ('white',): 1}
+
+lst=[[1, 3], [5, 7], [1, 3], [13, 15, 17], [5, 7], [9, 11]]
 
 # 95. Write a Python program to sort each sublist of strings in a given list of lists. 
 # 	Original list:
@@ -1157,26 +1180,13 @@ Original=[22.4, 4.0, 16.22, 9.1, 11.0, 12.22, 14.2, 5.2, 17.5]
 #
 # def Second_maximumn(lst):#[12,3,4,10,44,56,9,78]
 #     max_number=max(lst)#78
-#     max_count=lst.count(max_number)
-#     print(max_count)
+#     max_count=lst.count(max_number)#
+#     lst.sort()
 #     if max_count == len(lst):
 #         return None
 #     Second_max_number=max_count + 1
+#     return lst[-Second_max_number]
 
-# Second_maximumn([12,3,4,5])   
-
-
-# lst=[12,3,4,5,55,77,89]
-# second_largest=5
-# largest=max(lst)
-# for value in lst:
-#     if largest>value>second_largest and len(value) !=1 and lst.count(value)==1:
-#         second_largest=value
-#     elif lst.count(value) >=2:
-#         print("None")
-#     elif len(lst) ==1:
-#         print("None")
-# print(second_largest)            
-
+# print(Second_maximumn([5,7,5]))
 
 

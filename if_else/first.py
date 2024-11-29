@@ -47,7 +47,7 @@
 # print(x)q q
 
 
-# print("Bhrat")
+print("Bhrat")
 
 
 
@@ -121,6 +121,6 @@
 #     case _:
 #         print("Ur Selection of Operation is Wrong--try again")
 
-s="python         "
-s=s.rstrip()
-print(s)
+# s="python         "
+# s=s.rstrip()
+# print(s)

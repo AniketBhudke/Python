@@ -70,22 +70,27 @@
 # res=list(filter(a))
 # print(res)
 
-
-
 # dict1={len(word):word for word in input().split()}
-# print(dict1[max(dict1.keys())])
-
-
-
-
-
-
-
-
-
-
-
-
+# print(dict1[max(dict1.keys(
 # # l1=[1,2,10,10,10,10,5,10,10,10,3,4,4]
 # # dict1={val:l1.count(val) for val in l1}
-# # print(dict1)
+# # print(dict1)4
+
+def 
+
+
+
+def square(getval):
+    def sqcal():
+       n =  getval()
+       sqres = n*n
+       return n,sqres
+    return sqcal
+
+@cube
+@square
+def getval():
+    return int(input("Enter a number : ")) 
+
+n,res = getval()
+print(n,res)
