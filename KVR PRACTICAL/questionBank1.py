@@ -1145,6 +1145,18 @@ Original=[22.4, 4.0, 16.22, 9.1, 11.0, 12.22, 14.2, 5.2, 17.5]
 # 	{('green', 'orange'): 2, ('black',): 1, ('white',): 1}
 
 lst=[[1, 3], [5, 7], [1, 3], [13, 15, 17], [5, 7], [9, 11]]
+#logic-1
+# dict1={}
+# for lists in lst:
+#     dict1[tuple(lists)]=lst.count(lists)
+# print(dict1)    
+
+#logic-2
+# dict1={}
+# dict2={tuple(lists):lst.count(lists) for lists in lst}
+# print(dict2)
+
+
 
 # 95. Write a Python program to sort each sublist of strings in a given list of lists. 
 # 	Original list:
@@ -1163,7 +1175,6 @@ lst=[[1, 3], [5, 7], [1, 3], [13, 15, 17], [5, 7], [9, 11]]
 # 	[[2], [0], [1, 2, 3], [0, 1, 2, 3, 6, 7], [9, 11], [13, 14, 15, 17]]
 # 	After removing sublists from a given list of lists, which contains an element outside the given range:
 # 	[[13, 14, 15, 17]]
-
 # 98. Write a Python program to scramble the letters of string in a given list. 
 # 	Original list:
 # 	['Python', 'list', 'exercises', 'practice', 'solution']
@@ -1175,6 +1186,16 @@ lst=[[1, 3], [5, 7], [1, 3], [13, 15, 17], [5, 7], [9, 11]]
 # 	['Python', 3, 2, 4, 5, 'version']
 # 	Maximum and Minimum values in the said list:
 # 	(5, 2)
+# lst=['Python', 3, 2, 4, 5, 'version']
+# m=1
+# s=4
+# for val in lst:
+#     if type(val)==int:
+#         if val>m:
+#             m=val
+#         else:
+#             s=val
+# print(m,s)                
 
 
 #
@@ -1189,4 +1210,38 @@ lst=[[1, 3], [5, 7], [1, 3], [13, 15, 17], [5, 7], [9, 11]]
 
 # print(Second_maximumn([5,7,5]))
 
+
+# s = " i like this program very much "
+# lst=s.split()
+# lst.reverse()
+# print(' '.join(lst))
+
+# name="aniket"
+# print("welcome"+" " + name)
+
+
+# bound_by=[[]]
+# tag_name="tag"
+# bound_by[0 : :1   ] + tag_name + bound_by[ ::1 ]
+
+# s=input("Enter a string")
+# if s[::-1]==s:
+#     print("true")
+# else:
+#     print("false")    
+
+arr=[1,4,6]
+for val in arr:
+    for value in arr:
+        if val+value==8:
+            print(True)
+
+
+def pair_sum(dict, N, arr, sum):
+    arr.sort()
+    for i in range(len(arr)):
+        for j in range(i+1,len(arr)):
+            if arr[i]+arr[j]==sum:1`    `
+                return True
+    return False
 

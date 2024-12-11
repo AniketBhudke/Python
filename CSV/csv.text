@@ -5,7 +5,7 @@ Working with CSV Files in Python
         2) By Using csv.DictWriter 
 
 2.Reading  the data from CSV File.
-        1) By using Ucsv.reader 
+        1) By using csv.reader 
         2) By Using csv.DictReader
 
 ----------------------------------------------------

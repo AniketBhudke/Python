@@ -1,10 +1,10 @@
 #
 try:
-    with open("s.data","+a") as fp:
+    with open("A1.data","+a") as fp:
         # fp.seek(4)
         # filedata=fp.readline(10)
-        fp.seek(14)
-        filedata=fp.readline(10)
+        fp.seek(0)
+        filedata=fp.readline()
         print(filedata)
 except  FileNotFoundError:
     print("File not Found")

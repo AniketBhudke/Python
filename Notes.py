@@ -337,3 +337,30 @@
 
 # ------------------------------------------------------------------------------ 
 # 
+# comprehension
+#list comprehension
+# lst=[22,3,4,5,6,7,8]
+# lst1=[val for val in lst if val%2==0 ]
+# print(lst1)
+
+# lst=[[1,2,3],[4,5,6],[7,8,9]]
+# l1=[value for lists in lst for value in lists]
+# print(l1)
+
+# lst=[[1,2,3],[4,-5,6],[7,-8,9]]
+# l1=[value for lists in lst for value in lists if value>0]
+# print(l1)
+
+# lst=[1,2,3,4,5,6]
+# l1=[value**2 if value%2==0  else value**3 for value in lst]
+# print(l1)
+
+# lst=[11,-2,4,6,0,-5,66,-8]
+# l2=["positive" if value>2==0 else "negative" for value in lst]
+# print(l2)
+
+
+#AttributeError
+# x = 5
+# x.append(10)
+# AttributeError: 'int' object has no attribute 'append'

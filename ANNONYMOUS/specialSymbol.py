@@ -54,9 +54,17 @@
 # print(list(fun))
 #-----------------------------------------------------------------------------------------
 
-def templet(sno,sname,marks,crs="python"):
-    print("{},{},{},{}".format(sno,sname,marks,crs))
+# def templet(sno,sname,marks,crs="python"):
+#     print("{},{},{},{}".format(sno,sname,marks,crs))
     
-templet (4,"tanu",90)
-templet (5,"manu",80)
-templet (6,"sanu",70)
+# templet (4,"tanu",90)
+# templet (5,"manu",80)
+# templet (6,"sanu",70)
+
+
+
+
+print(2==2)
+print(2=="2")
+# print()
+
