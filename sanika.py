@@ -1560,3 +1560,30 @@ class nameValidation:
 # s = student()
 # s.info()
       
+# a="abcdijkljmlrbcvghhcqhhcrbc"
+# b="rbc"
+# if b in a:
+#     index_sub=a.index(b)
+#     print(index_sub)
+# else:
+#     print(-1)    
+
+# a="fgujagbfc"
+# b=list(a)
+# print(b)
+
+
+def power(a,b):
+    if b>0:
+        return a*(power(a,b-1))
+    elif b<0:
+        return a*(power(a,b+1))
+    else:
+        return 0
+
+print(pow(2,4))
+
+
+
+# ncr
+
