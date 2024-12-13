@@ -87,3 +87,10 @@
 #        return n,sqres
 #     return sqcal
 
+s1="gdaxibhzc"
+lst=[]
+for i in range(97,123,1):
+    for char in s1:
+        if ord(char)==i:
+            lst.append(char)
+print("".join(lst))

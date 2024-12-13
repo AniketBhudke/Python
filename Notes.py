@@ -312,7 +312,9 @@
 # 		5.				~				Bitwise Complement Operator
 # 		6.				^				Bitwise XOR Operator            same same 0 ,different 1
 # #------------------------------------------------------------------------------------------------------------
-
+# Even: A number n is even if n & 1 == 0.
+# Odd: A number n is odd if n & 1 == 1
+print(99&1==0)
 # 6.Membership Opeartor
     #   a. in operator
     #   b. not operator

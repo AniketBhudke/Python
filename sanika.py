@@ -1573,17 +1573,63 @@ class nameValidation:
 # print(b)
 
 
-def power(a,b):
-    if b>0:
-        return a*(power(a,b-1))
-    elif b<0:
-        return a*(power(a,b+1))
-    else:
-        return 0
+# def power(a,b):
+#     if b>0:
+#         return a*(power(a,b-1))
+#     elif b<0:
+#         return a*(power(a,b+1))
+#     else:
+#         return 0
 
-print(pow(2,4))
-
+# print(pow(2,4))
+# n=98
+# print(n & 0==1)
 
 
 # ncr
+# i=1#------1u
+# while(i<=n):#-----------n+1
+#     print(I)#--------------n
 
+#T(n)=1+(n+1)+n
+
+#
+# i=1#--1u
+# while(i<=10):#--22u
+#     print(i)#---10
+# while i<=20:#---42
+#     print(i+1) #--20u   
+
+# i=1#---1u
+# while(i<=n):#--------n
+#     print("hello")#--n
+#     i*=2    
+# suppose n=10
+
+# i=1,j=1
+# while(i<=5):
+#     while(j<=5):
+#         print(i,j)
+#         j+=1
+#     i+=1
+
+
+# def fact(n):
+#     if n==0 or n==1:#--3u
+#         return 1#--1u
+#     else:
+#         return n*fact(n-1)
+
+# a=fact(3)    
+# print(a)
+
+def fib(n):
+    if n==0 or n==1:#------
+        return 1
+    else:
+        return fib(n-1)+fib(n-2)
+f=fib(5)    
+print(f)
+
+# fib(5)=fib(4)+fib(3)
+fib(3)+fib(2)
