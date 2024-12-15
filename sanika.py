@@ -1623,13 +1623,41 @@ class nameValidation:
 # a=fact(3)    
 # print(a)
 
-def fib(n):
-    if n==0 or n==1:#------
-        return 1
-    else:
-        return fib(n-1)+fib(n-2)
-f=fib(5)    
-print(f)
+# def fib(n):
+#     if n==0 or n==1:#------
+#         return 1
+#     else:
+#         return fib(n-1)+fib(n-2)
+# f=fib(5)    
+# print(f)
 
-# fib(5)=fib(4)+fib(3)
-fib(3)+fib(2)
+# # fib(5)=fib(4)+fib(3)
+# fib(3)+fib(2)
+
+# def peakElement():
+#     # Code here
+#     arr=[1,22,3,4,5,6,77,6,8,9]
+#     higest=arr[0]
+#     for i in range(len(arr)):
+#         if arr[i]>higest and arr[i-1]!=arr[i+1]:
+#             higest=arr[i]
+#     return higest
+
+# a=peakElement()
+# print(a)
+
+# def a():
+#     n=5
+#     s=0
+#     for i in range(n):
+#         s=s+i
+#     return s
+# aaa=a()    
+# print(aaa)
+
+# sum=0
+# n=5
+# for i in range(n+1):
+#     sum=n*(n+1)//2#5
+# print(sum)
+

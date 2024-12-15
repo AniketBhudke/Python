@@ -1229,19 +1229,3 @@ lst=[[1, 3], [5, 7], [1, 3], [13, 15, 17], [5, 7], [9, 11]]
 #     print("true")
 # else:
 #     print("false")    
-
-arr=[1,4,6]
-for val in arr:
-    for value in arr:
-        if val+value==8:
-            print(True)
-
-
-def pair_sum(dict, N, arr, sum):
-    arr.sort()
-    for i in range(len(arr)):
-        for j in range(i+1,len(arr)):
-            if arr[i]+arr[j]==sum:1`    `
-                return True
-    return False
-
