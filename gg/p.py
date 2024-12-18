@@ -46,5 +46,62 @@
 # res=b.issubset(a)
 # print(res)
 
-a="aniket"
-print(a[::-1])
+# a="aniket"
+# print(a[::-1])
+
+# Given two arrays arr1 and arr2 of equal size, the task is to find whether the given arrays are equal. Two arrays are said to be equal if both contain the same set of elements, arrangements (or permutations) of elements may be different though.
+# Note: If there are repetitions, then counts of repeated elements must also be the same for two arrays to be equal.
+
+# Examples:
+
+# Input: arr1[] = [1, 2, 5, 4, 0], arr2[] = [2, 4, 5, 0, 1]
+# Output: true
+# Explanation: Both the array can be rearranged to [0,1,2,4,5]
+# Input: arr1[] = [1, 2, 5], arr2[] = [2, 4, 15]
+# Output: false
+# Explanation: arr1[] and arr2[] have only one common value.
+
+# arr1=[1,35,565,77,77,9]
+# arr2=[35,1,565,9,77]
+# for val in arr1:
+#     if val in arr2:
+#         res=True
+#     else:
+#         res=False
+# print(res)          
+
+
+# Given an array arr of positive integers. Reverse every sub-array group of size k.
+
+# Note: If at any instance, k is greater or equal to the array size, then reverse the entire array. You shouldn't return any array, modify the given array in place.
+
+# Examples:
+
+# Input: k = 3, arr= [1, 2, 3, 4, 5]
+# Output: [3, 2, 1, 5, 4]
+# Explanation: First group consists of elements 1, 2, 3. Second group consists of 4,5.
+# Input: k = 5, arr = [5, 6, 8, 9]
+# Output: [9, 8, 6, 5]
+# Explnation: Since k is greater than array size, the entire array is reversed.
+
+# def subArrayReverse(arr,k):
+#     arr1=[]
+#     for i in range(k,-1,-1):
+#         arr1.append(arr[i])
+#     for j in range(len(arr)-1,k-1,-1):
+#         arr1.append(arr[j])
+#     return arr1        
+
+#               #4
+# a=[2,4,55,66,7,8,90,20]   #
+# k=len(a)//2
+# res=subArrayReverse(a,k)  
+# print(res) 
+
+def solution():
+`````       and                 `
+
+arr=[4,5,7,8,90,55]
+res=solution()
+
+
