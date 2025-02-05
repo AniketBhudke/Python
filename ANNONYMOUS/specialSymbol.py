@@ -1,4 +1,5 @@
-#Basic program
+# #Basic program
+#filter function only return true value
 # def sum(val):
 #     if val%2==0:
 #         return True
@@ -12,10 +13,10 @@
 # print(list(obj))
 #--------------------------------------------------------------------
 #program
-# lst=[int(val) for val in input("Enter a list of values:").split()]
-# obj=filter(lambda val:val%2==0,lst)
+lst=[int(val) for val in input("Enter a list of values:").split()]
+obj=filter(lambda val:val%2==0,lst)
 
-# print(list(obj))
+print(list(obj))
 #----------------------------------------------------------------------
 #basic program
 # sum=lambda val:val%2==0
@@ -64,7 +65,7 @@
 
 
 
-print(2==2)
-print(2=="2")
-# print()
+# print(2==2)
+# print(2=="2")
+# # print()
 

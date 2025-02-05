@@ -1472,7 +1472,8 @@ class nameValidation:
 #         print(f"{a} and {b}={a+b}")
 #         print(id(self))
 
-    
+
+
 # s1 = student()
 # s1.student1(5,6)
 # print(id(s1))
@@ -1500,7 +1501,7 @@ class nameValidation:
 #     @classmethod
 #     def info(cls):
 #         sno=67
-#         sname="sanika"  #tula kai smjala sg tya hisobani sgto me
+#         sname="sanika"
 #         print(f"sno={sno},sname={sname}")
 
 # s = student()
@@ -1586,6 +1587,7 @@ class nameValidation:
 # print(n & 0==1)
 
 
+
 # ncr
 # i=1#------1u
 # while(i<=n):#-----------n+1
@@ -1660,4 +1662,171 @@ class nameValidation:
 # for i in range(n+1):
 #     sum=n*(n+1)//2#5
 # print(sum)
+
+#fyundamental data type 
+#6 types
+#14 data type
+#1.Fundamental Data Type
+#int,float,bool,complex
+#2.sequential  Data Type
+#str,bytes,bytearray,range
+# a="shankarlal"
+# print(type(a))
+
+#3.list Category Data Type
+#list,tuple
+
+#4.Dict Category Data Type
+#dict
+
+# a=[1,33,45,56,67,789]
+# print(type(a))
+# b=bytearray(a)
+# print(type(b))
+
+#5.set category data types
+#set,frozenset
+
+#6.nonetype category data type
+#NoneType
+
+#function
+#no return typr and no paramaeter
+# def sum():
+#     a=10
+#     b=6
+#     print(a+b)
+# sum()    
+
+# #
+# def sum(a,b):
+#     print(a+b)
+
+# sum(2,6)
+
+# def sum():
+#     a=5
+#     b=8
+#     return a+b
+
+# s=sum()
+# print(s)
+
+# def sum(a,b):
+#     c=a+b
+#     return c
+# c=sum(6,9)    
+# print(c)
+
+# def student(s_no,s_name,s_marks):
+#     print(f"the number of student={s_no}")
+#     print(f"the name of student ={s_name}")
+#     print(f"the marks of student ={s_marks}" )
+
+# s_no=6
+# s_name=7
+# s_marks=88
+# student(s_no,s_name,s_marks)    
+
+
+# def student(s_no,s_name,s_marks):
+#     print(f"the number of student={s_no}")
+#     print(f"the name of student ={s_name}")
+#     print(f"the marks of student ={s_marks}" )
+
+# s_no=6
+# s_name=7
+# student(s_name,s_no,s_marks=20)    
+
+
+# def sum(name,*k):
+#     print(f"name")
+#     for val in k:
+#         print(val)
+
+# sum("sanu",2,3,4,5,6,7,8,9)    
+
+
+
+# def sum(**k):
+#     print(k,type(k))
+# sum(sno=10,sname="aniket",marks=99,subject="english")    
+
+
+# def sum(a,b):
+#     c=a+b
+#     return c
+    
+# s=sum(5,7)
+# print(s)
+
+#compreshsion
+
+# lst=[1,2,3,4,5,6,7,8,9]
+# a=[val for val in lst]
+# for val1,val2 in zip(lst,a):
+#     print(val1,"---->",val2)
+
+#lambda function
+
+# addop=lambda k,v : k+v
+# res=addop(8,9)
+# print(res)
+
+# finding= lambda a,b,c:a if a>b and a>c else b if b>c and b>a else c
+# print(finding(4,5,6))
+# def pos(val):
+#     if val%2==0:
+#         return val
+    
+# lst=[int(val) for val in input().split()]
+
+
+# obj=filter(pos,lst)
+
+# pslist=list(obj)
+# print(pslist)
+
+# try:
+#     a=int(input("Enter a First Number:"))
+#     b=int(input("Enter a Second Number:"))
+#     c=a/b
+# except ZeroDivisionError:
+#     print("/n Divisible by zzero")
+# except ValueError:
+#     print("Don't Enter Alnums,stars and Symbols")
+# finally:
+#     print("Program Excuted Successfully..!")    
+# n=9
+# i=1
+# if i!=n:
+#     print(i)
+#     i=i+1
+
+
+
+# lst=[10,33,56,59,9,9,909]
+# second_high=lst[1]
+# higest=lst[2]
+# for i in range(len(lst)):
+#     if lst[i]>higest:
+#         second_high=higest
+#         higest=lst[i]
+#     elif higest>lst[i]>second_high:
+#         second_high=lst[i]
+# print(higest)
+# print(second_high)        
+
+def findpalindrome():
+    arr=[11,12,13,14,15,16]
+    count=0
+    for val in arr:
+        if str(val)==str(val)[::-1]:
+            count=count+1
+        else:
+            return False
+    else:
+        if count==len(arr):
+            return True   
+findpalindrome()                     
 

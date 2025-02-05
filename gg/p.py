@@ -98,10 +98,62 @@
 # res=subArrayReverse(a,k)  
 # print(res) 
 
-def solution():
-`````       and                 `
-
-arr=[4,5,7,8,90,55]
-res=solution()
 
 
+# Given an array arr, rotate the array by one position in clock-wise direction.
+
+# Examples:
+
+# Input: arr = [1, 2, 3, 4, 5]
+# Output: [5, 1, 2, 3, 4]
+# Explanation: If we rotate arr by one position in clockwise 5 come to the front and remaining those are shifted to the end.
+# Input: arr = [9, 8, 7, 6, 4, 2, 1, 3]
+# Output: [3, 9, 8, 7, 6, 4, 2, 1]
+# Explanation: After rotating clock-wise 3 comes in first position.
+
+# def solution(arr):
+#     arr1=[]
+#     arr1.insert(0,arr[-1])
+#     for i in range(0,len(arr)-1,1):
+#         arr1.append(arr[i])
+#     return arr1    
+
+# arr=[4,5,7,8,90,5,8,9,00,78,99,90,55]
+# res=solution(arr)
+# print(res) 
+
+#date=04-02-2024
+# def findpalindrome():
+#     arr=[11,12,13,14,15,16]
+#     count=0
+#     for val in arr:
+#         if str(val)==str(val)[::-1]:
+#             count=count+1
+#         else:
+#             return False
+#     else:
+#         if count==len(arr):
+#             return True   
+# findpalindrome()         
+
+# #date-05-02-2024
+
+# def reverseInGroups( arr, k):
+#         if k>len(arr):
+#             return arr[::-1]
+#         else:
+#             new_lst=[]
+#             for i in range(0,k):
+#                  new_lst.append(arr[i])
+#             for i in range(-1,k-1):
+#                  new_lst.append(arr[i])     
+#             return new_lst  
+
+
+arr,k=[1,2,3,4,5],3
+
+for i in range(0, len(arr), k):
+    arr[i:i+k] = arr[i:i+k][::-1]  # Reverse the subarray from index i to i+k
+print(arr)
+
+ 

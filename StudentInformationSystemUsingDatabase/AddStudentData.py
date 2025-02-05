@@ -17,7 +17,7 @@ def insertStudentData():
             else:
                 sname=input("Enter a Student Name:")
                 if not sname.isalpha():
-                    print("Enter The Don't")
+                    print("Please Enter The name:")
                     break
                 smarks=float(input("Enter A student Marks:"))
                 q="insert into StudentInformation values(%d,'%s',%f)"

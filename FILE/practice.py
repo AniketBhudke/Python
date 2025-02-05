@@ -31,3 +31,13 @@
 #         print("Data SuccessFully Raed--Verify")
 
 # WriteData()
+
+
+import CSV
+row=["name","class","marks"]
+rows=[["kunal","Bca",99],
+      ["sanika","BSc",90]]
+with open("saniket11.csv","a")as fp:
+    csvwr=CSV.writer(fp)
+    csvwr.writerow(row)
+    csvwr.writerows(rows)
