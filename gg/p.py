@@ -150,10 +150,41 @@
 #             return new_lst  
 
 
-arr,k=[1,2,3,4,5],3
+# arr,k=[1,2,3,4,5],3
 
-for i in range(0, len(arr), k):
-    arr[i:i+k] = arr[i:i+k][::-1]  # Reverse the subarray from index i to i+k
-print(arr)
+# for i in range(0, len(arr), k):
+#     arr[i:i+k] = arr[i:i+k][::-1]  # Reverse the subarray from index i to i+k
+# print(arr)
 
- 
+#date=07-03-2024
+# def insertAtIndex( arr, sizeOfArray, ind, element):
+#         #Your code here
+#         b=[]
+#         if sizeOfArray>ind:
+#             for value in arr:
+#                 if arr.index(value)==ind: 
+#                      b.append(element)
+#                 else:
+#                      b.append(value)     
+#         return b   
+
+
+# arr=[1,2,3,4,5]
+# sizeOfArray=5
+# ind=2   #ya index vr element kara lgte
+# element=10
+# res=insertAtIndex(arr,sizeOfArray,ind,element)
+# print(res)
+
+#date-08-02-2024
+def longest(self, arr):
+        # code here
+        long=""
+        for word in arr:
+            if len(word)>len(long):
+                long=word
+        return long        
+            
+arr=["abc","def","ghi","jkl","mno"]
+res=longest(arr)
+print(res)
