@@ -1817,16 +1817,124 @@ class nameValidation:
 # print(higest)
 # print(second_high)        
 
-def findpalindrome():
-    arr=[11,12,13,14,15,16]
-    count=0
-    for val in arr:
-        if str(val)==str(val)[::-1]:
-            count=count+1
-        else:
-            return False
-    else:
-        if count==len(arr):
-            return True   
-findpalindrome()                     
+# def findpalindrome():
+#     arr=[11,12,13,14,15,16]
+#     count=0
+#     for val in arr:
+#         if str(val)==str(val)[::-1]:
+#             count=count+1
+#         else:
+#             return False
+#     else:
+#         if count==len(arr):
+#             return True   
+# findpalindrome()                     
+import sys as s
+import numpy as np
+arr=[1,2,3,4,5,6,464 ,55,55,55,6,77889]
+# for val in arr:
+#     print(id(val))
+# print(s.getsizeof(arr))
+# arr=np.array(arr)
+# print("-----------------------")
+# for val in arr:
+#     print(id(val))
 
+# print(s.getsizeof(arr))
+
+# a=np.array([1,2,3,4.5,5,6,7,8,9],dtype=int).reshape(3,3,1)
+# print(type(a))
+# print("dimension of matrix=",a.ndim)
+# print("Shape of array=",a.shape)
+# print("size of array=",a.size)
+# print(a.dtype)
+# print(a)
+
+# a.shape=(3,3)
+# print(type(a))
+# print("dimension of matrix=",a.ndim)
+# print("Shape of array=",a.shape)
+# print("size of array=",a.size)
+# print(a.dtype)
+
+# print(a)
+
+# a=np.arange(1,10).reshape(3,3)
+# print(a) 
+
+# a=np.zeros(9).reshape(3,3)
+# print(a)
+
+# a=np.ones(9).reshape(3,3)
+# print(a)
+
+# a=np.identity(3)
+# print(a)
+
+# a=np.eye(3,3,k=2)
+# print(a)
+
+# a=np.full((3,3),fill_value="sanika")
+# print(a)
+
+# rv,a=np.linspace(1,10,5,endpoint=False,retstep=True)
+# print(a,rv)
+
+# a=np.arange(0,9).reshape(3,3)
+# b=np.arange(10,19).reshape(3,3)
+# c=np.hstack((a,b))
+# print(c)
+
+#random
+from numpy import random as rd
+# a=rd.randint(11,23,size=9).reshape(3,3)
+# print(a)
+
+# a=rd.rand(3,3)
+# print(a)
+
+# a=rd.uniform(10,18,size=6).reshape(2,3)
+# print(a)
+
+# a=rd.randn(8).reshape(2,4)
+# print(a)
+
+# a=rd.normal(loc=4,scale=4,size=9).reshape(3,3)
+# print(a)  #loc=mean,scale=stddev
+
+# a=rd.choice(list("ABCDEFGHIJK145677889LMNOPQRSTVJBFJ"),size=4)
+# word=""
+# for chr in a:
+#     word=word+chr
+# print(word)    
+
+# a=rd.choice(list("5568232908128408815"),size=6)
+# word=""
+# for chr in a:
+#     word=word+chr
+# print(word)    
+
+# a=np.arange(9).reshape(3,3)
+# print(a)
+# print("------------------------------------------")
+# rd.shuffle(a)
+# print(a)
+
+# a=np.arange(18).reshape(2,3,3)
+# print(a)
+# print("------------------------------------------")
+# rd.shuffle(a)
+# print(a)
+
+import itertools
+# a=[1,2,3]
+# count=0
+# perm=itertools.permutations(a)
+# for value in perm:
+#     print(value)
+#     count=count+1
+# print(a,count)
+
+lst=[1,2,3,4]
+for i in range(0,len(lst)):
+    perm=list(itertools.permutations)

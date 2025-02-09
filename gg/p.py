@@ -177,14 +177,23 @@
 # print(res)
 
 #date-08-02-2024
-def longest(self, arr):
-        # code here
-        long=""
-        for word in arr:
-            if len(word)>len(long):
-                long=word
-        return long        
+# def longest(self, arr):
+#         # code here
+#         long=""
+#         for word in arr:
+#             if len(word)>len(long):
+#                 long=word
+#         return long        
             
-arr=["abc","def","ghi","jkl","mno"]
-res=longest(arr)
-print(res)
+# arr=["abc","def","ghi","jkl","mno"]
+# res=longest(arr)
+# print(res)
+
+#date-09-02-2024
+class Solution:
+    def lastIndex(self, s: str) -> int:
+        # code here
+        ind=s.rfind("1")
+        return ind    
+        return -1
+            
