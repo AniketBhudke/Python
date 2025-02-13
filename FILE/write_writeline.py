@@ -22,10 +22,10 @@
 #--------------------------------------------
 #               writeline
 #-------------------------------------------------
-# x=[10,"sagu",44,"aniket","hyd","emfjf"]
-# with open("aniket.data",'w') as p:
-#     p.write(str(x))
-#     print("Data Written to the File--Verify")
+x=[10,"sagu",44,"aniket","hyd","emfjf"]
+with open("D:\\PYTHON BACKEND\\FILE\\aniket.data",'w') as p:
+    p.write(str(x))
+    print("Data Written to the File--Verify")
 
 
 #

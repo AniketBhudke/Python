@@ -190,10 +190,42 @@
 # print(res)
 
 #date-09-02-2024
-class Solution:
-    def lastIndex(self, s: str) -> int:
-        # code here
-        ind=s.rfind("1")
-        return ind    
-        return -1
+# class Solution:
+#     def lastIndex(self, s: str) -> int:
+#         # code here
+#         ind=s.rfind("1")
+#         return ind    
+#         return -1
             
+# def getOddOccurrence(arr, n):
+#         # code here 
+#         for i in range(len(arr)):
+#             cont=arr.count(arr[i])
+#             if cont%2!=0:
+#                   return arr[i]
+            
+
+# arr={1,2,3,2,4,4,1,3,5,6,7,6,7}
+# n=13
+# res=getOddOccurrence(arr,n)
+# print(res)
+
+#date-12-02-2024
+#me
+# def arraySum( arr):
+#     s=0
+#     for value in arr:
+#         s+=value
+#     print(s)
+   	
+
+# arr=[1,2,3,4,5]    
+# arraySum(arr)    
+
+#chatGPT
+def arraySum( arr):
+    s = sum([value for value in arr])
+    print(s)
+
+arr=[1,2,3,4,5]    
+arraySum(arr)    
