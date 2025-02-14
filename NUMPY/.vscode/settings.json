@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./EXCEPTION/Namevalidation"
+    ],
+    "liveServer.settings.port": 5501
+}
