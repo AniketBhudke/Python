@@ -1935,6 +1935,154 @@ import itertools
 #     count=count+1
 # print(a,count)
 
-lst=[1,2,3,4]
-for i in range(0,len(lst)):
-    perm=list(itertools.permutations)
+# lst=[1,2,3,4]
+# for i in range(0,len(lst)):
+#     perm=list(itertools.permutations)
+
+
+import numpy as np
+#array
+#arange
+#zeros
+#ones
+#full
+#eye
+#identity
+#linspace
+#vstack
+#hstack
+#random module function
+##randint
+#uniform 
+#randn
+#normal
+#choice
+#shuffle
+
+
+
+#numpy indexing
+
+# a=np.arange(16).reshape(2,4,2)
+#1-d
+# print(a[3])
+# print(a[-2])
+#2-d
+# # print(a[0,2])
+# # print(a[1,2])
+# print(a[-1,-2])
+
+# #3-d
+# print(a)
+# print(a[0,2,1])
+# print(a[0,-2,-1])
+
+#slicing
+#2-d slicing
+# a=np.arange(16).reshape(4,4)
+# print(a)
+# print("-----------------------------------")
+# print(a[1:3,::])
+# print("-----------------------------------")
+# print(a[-2:-4:-1,::-1])
+
+# a=np.arange(32).reshape(2,4,4)
+# print(a)
+# print("-----------------------------------")
+# print(a[0:1:,1:3,::])
+# print("-----------------------------------")
+# print(a[0:1,1:3:,0:3:])
+# # print("-----------------------------------")myt aaho me tula sudharya ch try krto
+# print(a[0:-1:-1,0:-3:-1,-1:-4:-1])
+
+#1-d advanced
+a=np.arange(3,32)
+# print(a)
+# s=[2,4,6]
+# print(a[s])
+# print("-------------------------------")
+# print(a[[1,3,5]])
+
+
+# #2-d
+# a=np.arange(16).reshape(2,8)
+# print(a)
+# rowsize=[0]
+# columnsize=[2,3,4]
+# print(a[rowsize,columnsize])
+
+
+# #filtering in numpy
+# a=np.array([1,2,3,4,5,6,7,80])
+# x=np.extract(a%2==0,a)
+# print(x)#type kru nko maya dimg krb karu nko vs code pahu ki msg ki screen share kru laptop hang pdte sanika 5 vela sgitala aata
+
+#iterating in numpy
+
+# a=np.arange(32).reshape(2,8,2)
+# for val in np.nditer(a):
+#     print(val)
+
+
+# a=np.arange(32).reshape(2,8,2)
+# print(a)
+# for val in np.ndenumerate(a):
+#     print(val)
+
+# #copy and view
+# a=np.arange(25,32)
+# print(a)
+
+# b=a.copy()
+# a[2]=777777
+# print(a)
+# print(b)
+# print("------------------------------------------------")
+
+
+# a=np.arange(25,32)
+# print(a)
+
+# b=a.view()
+# a[2]=88888
+# print(a)
+# print(b)
+# print("------------------------------------------------")
+
+# #flatten and ravel
+# a=np.arange(9).reshape(3,3)
+# print(a)
+
+# b=a.flatten()
+# a[2]=777777
+# print(a)
+# print(b)
+# print("------------------------------------------------")
+
+
+# a=np.arange(9).reshape(3,3)
+# print(a)
+
+# b=a.ravel()
+# a[2]=88888
+# print(a)
+# print(b)
+# # print("------------------------------------------------")
+
+# #arithamtic opeartion
+
+# #add()
+# #1-d
+# a=np.array([1,2,3])
+# b=np.array([4,5,6])
+# c=np.add(a,b)
+# print(c)
+
+#2-d
+
+a=np.arange(9).reshape(3,3)
+b=np.arange(9).reshape(3,3)
+print(a)
+print(b)
+c=np.add(a,b)
+print(c)
