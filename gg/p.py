@@ -237,16 +237,70 @@
 # print("Series Object Data")
 # print(s,type(s))
 
-import numpy as np
-import pandas as pd
-lst=["Rossum","Travis","Ritche","Dennis","Hunter","James","Jhon"]
-s=pd.Series(lst)
-print("Series Object Data")
-print(s)
+# import numpy as np
+# import pandas as pd
+# lst=["Rossum","Travis","Ritche","Dennis","Hunter","James","Jhon"]
+# s=pd.Series(lst)
+# print("Series Object Data")
+# print(s)
 
-print(s[0::2])
+# print(s[0::2])
 
-print(s[0])
+# print(s[0])
 
-s[[0,1]]=["VAN","OLI"]
-print(s)
+# s[[0,1]]=["VAN","OLI"]
+# print(s)
+
+
+
+# #15-02-2024
+# def min_value_to_balance(arr):
+#         # code here
+#         ind=len(arr)//2
+#         s1,s2=0,0
+#         for i in range(0,ind):
+#             s1=arr[i]+s1
+#         for i in range(ind,len(arr)):
+#             s2=arr[i]+s2
+#         if s1>s2:
+#             return s1-s2
+#         return s2-s1 
+
+# s=min_value_to_balance([1,2,3,4,5,6])
+# print(s)
+
+# #16-02-2024
+# def countOddEven(arr):
+# 		#Code here
+#     odd=0
+#     even=0
+#     for value in arr:
+#         if value%2==0:
+#             even=even+1
+#         else:
+#             odd=odd+1
+#     return odd,even  
+# arr=[1,2,3,4,5,6]
+# s=countOddEven(arr)
+# print(s)
+
+# def prime():
+#     s=int(input("Enter:"))
+#     res="prime"
+#     for i in range (2,s):
+#         if s%i==0:
+#             res="not prime"
+#     return res     
+# res=prime()
+# print(res)    
+
+def findElements(arr):
+        # Your code goes here
+        lst=[]
+        arr.sort()
+        for i in range(len(arr)-2):
+            lst.append(arr[i])
+        return lst    
+        
+res=findElements([11,3,4,5,6,9])
+print(res)
