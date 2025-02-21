@@ -19,3 +19,6 @@ import numpy as np
 # c=np.ceil(a)
 # print(c)
 
+a=[10,33,56,78,96,5,4,2]
+c=np.diff(a,n=5)
+print(c)

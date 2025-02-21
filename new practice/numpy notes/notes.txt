@@ -130,3 +130,45 @@ OUTPUT:
 
 GCD(greatest common denominator)
 
+np.gcd()------jvl ch divisor value
+
+LCM(lowest common multiple)
+
+np.lcm()-----jvl ch multiple
+
+--------------------------------------------------------------------------------------
+
+discrete differecence
+
+np.diff(arr,n)-------differecence in array b-a in value of one array
+
+--------------------------------------------------------------------------------------
+
+splitting array  row=0,column=1
+
+np.split()---------equal part  mde devide krte array le    ------------|
+                                                                       |----------1-d array
+np.array_split()---unequal part mde devide krte array le    -----------|
+
+np.split(arrayName,no.of parts,axis=)------------|
+                                                 |
+np.vsplit()--------------------------------------|----------------------2-d array
+                                                 |
+np.hsplit()--------------------------------------|
+
+np.dsplit()-------------3d array
+
+--------------------------------------------------------------------------------------
+
+Numpy with IO operation
+
+same with text file and csv file
+write--------savetxt()
+read---------loadtxt(),genformtxt()
+
+json file
+
+file_name.tolist()------------convert numpy array to python list
+json.dump()------writing
+json.load()------reading
+--------------------------------------------------------------------------------------

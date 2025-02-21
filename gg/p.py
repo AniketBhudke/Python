@@ -294,13 +294,28 @@
 # res=prime()
 # print(res)    
 
-def findElements(arr):
-        # Your code goes here
-        lst=[]
-        arr.sort()
-        for i in range(len(arr)-2):
-            lst.append(arr[i])
-        return lst    
+# def findElements(arr):
+#         # Your code goes here
+#         lst=[]
+#         arr.sort()
+#         for i in range(len(arr)-2):
+#             lst.append(arr[i])
+#         return lst    
         
-res=findElements([11,3,4,5,6,9])
-print(res)
+# res=findElements([11,3,4,5,6,9])
+# print(res)
+
+
+# def findSum(arr):
+# 		# code here
+# 	lst=[]
+# 	s=0
+# 	for val in arr:
+# 		if val not in lst:
+# 			lst.append(val)
+# 			s=s+val
+# 	return s
+#     #return sum(set(arr))
+				
+# res=findSum([1,2,3,4,4,5,6,7,8,8,9])
+# print(res)
