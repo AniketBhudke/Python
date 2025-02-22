@@ -1,0 +1,1 @@
+print(df[df["grade"]=="distinction".upper()].shape[0])

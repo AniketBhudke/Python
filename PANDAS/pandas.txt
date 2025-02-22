@@ -1,0 +1,78 @@
+1.panal
+2.series -----single column called as series
+3.dataframe---collection of series or columns
+
+--------------------------------------------------------------------
+2.series -----single column called as series----set not possible
+-------------------------------------------------------------------------------------------
+
+Series attribute and methods
+------------------------------------------
+ATTRIBUTE
+-----------------
+1.index
+2.Name
+3.values
+4.size
+5.empty
+
+FUNCTION
+-----------------
+1.head()---upper che element dete 
+2.tail()---lower che elment dete
+-----------------------------------------------------
+
+Get And Set Series values
+------------------------------------
+df[index]
+df[indexStrt:indexStop]
+------------------------------------------------------------
+
+Opeartion on Series
+----------------------------------------------------------
+1.adding the series of values
+--------------------------------
+c=1obj.add(secdObj)
+c=1obj.add(secdObj,Fill_value=0)
+
+2.Subtracting the series of values
+-----------------------------------------
+c=1obj.sub(secdObj)
+c=1obj.sub(secdObj,Fill_value=0)
+
+3.Drop the series of values
+------------------------------------------
+c=1obj.drop(secdObj)
+c=1obj.drop(secdObj,inplace=True)
+
+4.finding number of misssing values
+------------------------------------------
+c=1obj.isnull()
+c=1obj.isna()
+
+5.sorting number of values  in series
+------------------------------------------
+c=1obj.sort_values()
+
+6.max/largest-------max(),nlargest()
+
+7.min/nsmallest-----min(),nsmallest()
+
+8.unique()
+
+9.number of unique values------nunique()
+
+10.statistical Opeartion
+sum()
+count()
+max()
+min()
+mean()
+median()
+var()
+std()
+mode()
+describe()
+product()
+cumprod()
+agg()
