@@ -319,3 +319,15 @@
 				
 # res=findSum([1,2,3,4,4,5,6,7,8,8,9])
 # print(res)
+
+def binSort(self, arr):
+        # code here
+    lst=[]
+    for val in arr:
+          
+
+
+arr=[0,1,1,0,1,2,3,2,2]        
+res=binSort(arr)        
+
+        

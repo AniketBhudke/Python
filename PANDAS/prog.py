@@ -55,12 +55,12 @@ import numpy as np
 # print(c)
 
 # 3.Drop the series of values
-# a=pd.Series([100,200,300,400],index=[1,2,3,4])
-# a=a.drop(3,inplace=True)
+# a=pd.Series([100,200,300,400],index=['a','b','c','d'])
+# a=a.drop("a",inplace=False)
 # print(a)
 
-s = pd.Series([10, 20, 30, 40], index=['a', 'b', 'c', 'd'])
+# s = pd.Series([10, 20, 30, 40], index=['a', 'b', 'c', 'd'])
 
-s['e']=999
-print(s)
+# s['e']=999
+# print(s)
 

@@ -1,3 +1,180 @@
+nd array function  
+1.array 
+2.arange
+3.zeros-----------generating all zeros
+4.ones------------generating all ones
+5.eye-------------genertaing user choice diagonal element
+6.full------------generate user choice all number array
+7.identity--------diagonal elemet 1
+8.linspace--------generating floating point number
+9.hstack----------generate horizontal
+10.vstack---------generate vertical
+----------------------------------------------------------------------------------------------------
+
+random module function
+1.randint()-------generating int value
+2.rand-------------generate 0 to 1 floating value
+3.uniform----------user choice floating value
+4.randn------------ +ve and -ve value
+5.normal------------loc and scale
+6.choice-------
+7.shuffle
+--------------------------------------------------------------------------------------
+itertools.permutation()
+--------------------------------------------------------------------------------------
+copy() and view()
+copy----copy the content one object to thers
+view()--copy the content but original ya mde pn chnge hote
+--------------------------------------------------------------------------------------
+flatten() and ravel()
+flatten()--it is like copy but convert into 1-d array
+ravel()----it is like view but convert into 1-d array
+--------------------------------------------------------------------------------------
+nditer()----loop
+ndenumerate---enumerate function
+--------------------------------------------------------------------------------------
+arithamatic operators
+1.add()--------------------------2 array che sum krun 1 array dete new
+2.substarct()-------------------2 array che substarction krun 1 array dete ne
+3.multiply() and dot()----------
+4.divide()
+5.floor_divide()
+6.mod()
+7.power()
+--------------------------------------------------------------------------------------
+
+statistical operation --row=1,column=0
+1.amax-----------------------
+2.amin-----------------------
+3.mean-----------------------sum of all element/total no of element
+4.median---------------------middle element
+5.var------------------------
+6.std------------------------
+
+--------------------------------------------------------------------------------------
+append(),insert() and delete()----column =1,row=0
+
+append()----column=[[],[],[]]-----row=[]
+insert()----position vr insert krte
+delete()
+--------------------------------------------------------------------------------------
+
+numpy linear algebra
+
+1.dot()--------------------purna array ch product find krte
+2.inner()------------------
+3.outer()------------------all possible cobination
+4.det()--------------------linalg.det()-----derivative---
+For a 2x2 matrix:
+A=[ a b
+    c d]
+det(A)=ad−bc
+
+For a 3x3 matrix:
+A= a  b  c
+   d  e  f
+   g  h  i
+
+det(A)=a(ei−fh)−b(di−fg)+c(dh−eg)
+
+
+5.solve()------------------give x and y
+6.inv()--------------------give inverse
+
+7.trace()------------------sum of diagonal element
+--------------------------------------------------------------------------------------
+
+sorting array-----column=0,row=1
+
+sort()
+
+summation
+
+sum()-----like addition but it take one parameter[]
+cumsum---np.cumsum(array, axis=None, dtype=None)
+
+
+products
+
+prod()----
+cumprod()---
+
+--------------------------------------------------------------------------------------
+
+numpy set operation
+
+finding union
+union1d()-----------2 array che element eka cha array
+intersection1d()----give common elemnt in array
+setdiff1d()----------differecence elemet differenece
+setXor1d()-----------symmentric differecence
+--------------------------------------------------------------------------------------
+
+rounding decimals
+
+1.trunc() or fix()--------remove the decimals
+2.around()----------------around(num,no of decimals you want)
+3.floor()-----------------lowest
+4.ceil()------------------higest
+
+a = np.array([1.7, 2.3, 3.9, -0.5])
+b=np.floor(a)
+print(b)
+c=np.ceil(a)
+print(c)
+OUTPUT:
+    [ 1.  2.  3. -1.]
+    [ 2.  3.  4. -0.]   
+
+--------------------------------------------------------------------------------------
+
+GCD(greatest common denominator)
+
+np.gcd()------jvl ch divisor value
+
+LCM(lowest common multiple)
+
+np.lcm()-----jvl ch multiple
+
+--------------------------------------------------------------------------------------
+
+discrete differecence
+
+np.diff(arr,n)-------differecence in array b-a in value of one array
+
+--------------------------------------------------------------------------------------
+
+splitting array  row=0,column=1
+
+np.split()---------equal part  mde devide krte array le    ------------|
+                                                                       |----------1-d array
+np.array_split()---unequal part mde devide krte array le    -----------|
+
+np.split(arrayName,no.of parts,axis=)------------|
+                                                 |
+np.vsplit()--------------------------------------|----------------------2-d array
+                                                 |
+np.hsplit()--------------------------------------|
+
+np.dsplit()-------------3d array
+
+--------------------------------------------------------------------------------------
+
+Numpy with IO operation
+
+same with text file and csv file
+write--------savetxt()
+read---------loadtxt(),genformtxt()
+
+json file
+
+file_name.tolist()------------convert numpy array to python list
+json.dump()------writing
+json.load()------reading
+--------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+
+
 1.panal
 2.series -----single column called as series
 3.dataframe---collection of series or columns
