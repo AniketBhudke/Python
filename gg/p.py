@@ -320,14 +320,20 @@
 # res=findSum([1,2,3,4,4,5,6,7,8,8,9])
 # print(res)
 
-def binSort(self, arr):
-        # code here
-    lst=[]
-    for val in arr:
-          
-
-
-arr=[0,1,1,0,1,2,3,2,2]        
-res=binSort(arr)        
-
+# def majorityWins(arr, n, x, y):
+#         # code here
+#         countx=arr.count(x)
+#         county=arr.count(y)
+#         if countx>county:
+#             return x
+#         elif   countx<county:  
+#             return y
+#         elif countx==county:
+#             if x>y:
+#                 return y
+#             else:
+#                 return x
+    
+# res=majorityWins([1,1, 2, 2,3,3, 4,6],5,1,2)
+# print(res)
         
