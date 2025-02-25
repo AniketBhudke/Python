@@ -336,4 +336,10 @@
     
 # res=majorityWins([1,1, 2, 2,3,3, 4,6],5,1,2)
 # print(res)
+
+arr=[11,22,33,44,55,66,77]
+num1=22
+num2=44
+ind2 = len(arr) - 1 - arr[::-1].index(num2)
+print(ind2)
         

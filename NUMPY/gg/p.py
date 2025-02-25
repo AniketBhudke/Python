@@ -190,10 +190,15 @@
 # print(res)
 
 #date-09-02-2024
-class Solution:
-    def lastIndex(self, s: str) -> int:
-        # code here
-        ind=s.rfind("1")
-        return ind    
-        return -1
-            
+# class Solution:
+#     def lastIndex(self, s: str) -> int:
+#         # code here
+#         ind=s.rfind("1")
+#         return ind    
+#         return -1
+
+arr=[11,22,33,44,55,66]
+num1=22
+num2=55
+ind1=arr.index(num1)
+print(ind1)
