@@ -208,7 +208,7 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"An error occurred: {str(e)}")
 
-    elif "play songs on youtube" in query:
+    elif " songs youtube" in query:
         kit.playonyt("see you again")
 
     elif "email" in query:
