@@ -344,11 +344,20 @@
 # print(ind2)
         
 
-import pandas as pd
+# import pandas as pd
 
-df=pd.DataFrame({"Days":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-                 "Week1":[27,29,32,33,33,31,29],
-                 "Week2":[29,30,31,33,34,34,31],
-                 "Week3":[29,28,25,27,31,30,29]})
-print(df)
-df.to_csv("abcd.csv")
+# df=pd.DataFrame({"Days":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+#                  "Week1":[27,29,32,33,33,31,29],
+#                  "Week2":[29,30,31,33,34,34,31],
+#                  "Week3":[29,28,25,27,31,30,29]})
+# print(df)
+# df.to_csv("abcd.csv")
+
+def valueEqualToIndex(arr):
+        lst=[]
+        for i in range(len(arr)):
+            if arr[i]==i+1:
+                lst.append(arr[i])
+        return lst        
+res=valueEqualToIndex([10,2,3,5,7])    
+print(res)
