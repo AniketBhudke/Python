@@ -337,9 +337,18 @@
 # res=majorityWins([1,1, 2, 2,3,3, 4,6],5,1,2)
 # print(res)
 
-arr=[11,22,33,44,55,66,77]
-num1=22
-num2=44
-ind2 = len(arr) - 1 - arr[::-1].index(num2)
-print(ind2)
+# arr=[11,22,33,44,55,66,77]
+# num1=22
+# num2=44
+# ind2 = len(arr) - 1 - arr[::-1].index(num2)
+# print(ind2)
         
+
+import pandas as pd
+
+df=pd.DataFrame({"Days":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+                 "Week1":[27,29,32,33,33,31,29],
+                 "Week2":[29,30,31,33,34,34,31],
+                 "Week3":[29,28,25,27,31,30,29]})
+print(df)
+df.to_csv("abcd.csv")
