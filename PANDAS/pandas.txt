@@ -257,3 +257,23 @@ agg()
 
 DataFrame
 ====================
+
+-----------------------------------------------------------------------------------------
+Missing value in dataframe
+-----------------------------------------------------------------------------------------
+Checking for missing values using isna(),isnull() ,notna() and notnull()
+isnull()------------------------githa nan value asel te titha True dete
+isna()--------------------------githa nan value asel te titha True dete
+notna()--------------------------githa nan value asel te titha False dete
+notnull()-------------------------githa nan value asel te titha False dete
+---------------------------------------------------------------------------------------------
+
+Filling missing values using fillna(), replace()  :
+-------------------------------------------------------------------
+df.fillna(value)
+df.replace(Fill_value=np.NaN,value=0.0)
+--------------------------------------------------------------------------
+
+			Pandas----Merging DataFrames
+-------------------------------------------------------------------------
+            
