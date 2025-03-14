@@ -353,11 +353,61 @@
 # print(df)
 # df.to_csv("abcd.csv")
 
-def valueEqualToIndex(arr):
-        lst=[]
-        for i in range(len(arr)):
-            if arr[i]==i+1:
-                lst.append(arr[i])
-        return lst        
-res=valueEqualToIndex([10,2,3,5,7])    
-print(res)
+# def valueEqualToIndex(arr):
+#         lst=[]
+#         for i in range(len(arr)):
+#             if arr[i]==i+1:
+#                 lst.append(arr[i])
+#         return lst        
+# res=valueEqualToIndex([10,2,3,5,7])    
+# print(res)
+
+
+
+# l1 = [7,871,7687,867,86786,786,7867]
+# print(f"Before sorting : {l1}")
+# for i in range(len(l1)):
+#         for j in range(i+1,len(l1)):
+#                 if l1[i]>l1[j]:
+#                         l1[i],l1[j]=l1[j],l1[i]
+# print(f"After sorting : {l1}")
+
+
+# Fibonacci series
+# n1,n2=0,1
+# n=10
+# print(f"Fibonacci Series: {n1} {n2} = ",end=' ')
+# for i in range(n):
+#     n3=n1+n2
+#     print(n3,end=' ')
+#     n1=n2
+#     n2=n3
+
+# 0+1=1
+# 1+1=2 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# #
+
+
+arr=[1,2,3,4,5]
+d=2
+lst=[]
+lst=arr[d:]+arr[:d]
+print(lst)  # Output: [2, 3, 4, 5,
+
+for i in range(d):
+        first_element = arr.pop(0)
+        arr.append(first_element)
+print(arr)
+        
