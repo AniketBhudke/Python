@@ -400,14 +400,43 @@
 # #
 
 
-arr=[1,2,3,4,5]
-d=2
-lst=[]
-lst=arr[d:]+arr[:d]
-print(lst)  # Output: [2, 3, 4, 5,
+# arr=[1,2,3,4,5]
+# d=2
+# lst=[]
+# lst=arr[d:]+arr[:d]
+# print(lst)  # Output: [2, 3, 4, 5,
 
-for i in range(d):
-        first_element = arr.pop(0)
-        arr.append(first_element)
-print(arr)
+# for i in range(d):
+#         first_element = arr.pop(0)
+#         arr.append(first_element)
+# print(arr)
+
+# def oneLinePrintEle():        
+#         arr=[1,2,3,4,5,6]
+#         for i in range(len(arr)):
+#              print(arr[i],end="")
+# oneLinePrintEle()        
+
+#replace 0 to 5
+# n=7090
+# lst=list(str(n))
+# for i in range(len(lst)):
+#     if lst[i]=="0":
+#         lst[i]='5'
+# print("".join(lst))    
+
+num=7090
+result = 0
+place = 1
+    
+while num > 0:
+        digit = num % 10  # last degit aanala 
         
+        if digit == 0:# Replace 0 with 5
+            digit = 5  
+        
+        result =result+ digit * place #4
+        place =place * 10
+        num //= 10  # Remove the last digit
+print(result)        
+      
