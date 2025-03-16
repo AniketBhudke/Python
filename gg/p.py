@@ -425,18 +425,18 @@
 #         lst[i]='5'
 # print("".join(lst))    
 
-num=7090
-result = 0
-place = 1
+# num=7090
+# result = 0
+# place = 1
     
-while num > 0:
-        digit = num % 10  # last degit aanala 
+# while num > 0:
+#         digit = num % 10  # last degit aanala 
         
-        if digit == 0:# Replace 0 with 5
-            digit = 5  
+#         if digit == 0:# Replace 0 with 5
+#             digit = 5  
         
-        result =result+ digit * place #4
-        place =place * 10
-        num //= 10  # Remove the last digit
-print(result)        
+#         result =result+ digit * place #4
+#         place =place * 10
+#         num //= 10  # Remove the last digit
+# print(result)        
       
