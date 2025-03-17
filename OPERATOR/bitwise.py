@@ -15,6 +15,12 @@
 # print(a|b)
 
 #bitwise XOR
-a=0
-b=1
-print(a^b)
+# a=0
+# b=1
+# print(a^b)
+
+a={1:2,3:5}
+i=1
+s=0
+s=s+a[i]
+print(s)
