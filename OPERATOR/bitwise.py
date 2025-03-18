@@ -19,8 +19,23 @@
 # b=1
 # print(a^b)
 
-a={1:2,3:5}
-i=1
-s=0
-s=s+a[i]
-print(s)
+# a={1:2,3:5}
+# i=1
+# s=0
+# s=s+a[i]
+# print(s)
+
+a=[11,2,33,44,55,34,5,6,7,8]
+even=[]
+odd=[]
+for i in range(len(a)):
+    if a[i]%2==0:
+        even.append(a[i])
+    else:
+        odd.append(a[i])    
+even.sort()
+odd.sort()
+a.clear()
+a=even+odd
+for i in range(len(a)):
+    print(a[i],end="  ")
