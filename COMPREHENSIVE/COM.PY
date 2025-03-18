@@ -186,11 +186,11 @@
 # a=list(filter(odd,lst))
 # print(a)
 
-odd=lambda value : value %2 == 0 
+# odd=lambda value : value %2 == 0 
 
-lst=[1,2,3,4]
-a=list(filter(lambda value :  value %2 == 0 ,lst))
-print(a)
+# lst=[1,2,3,4]
+# a=list(filter(lambda value :  value %2 == 0 ,lst))
+# print(a)
 
 # odd = lambda value: value % 2 == 0
 
