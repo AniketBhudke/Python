@@ -25,17 +25,29 @@
 # s=s+a[i]
 # print(s)
 
+
+#seggrigate even and odd
+# a=[11,2,33,44,55,34,5,6,7,8]
+# even=[]
+# odd=[]
+# for i in range(len(a)):
+#     if a[i]%2==0:
+#         even.append(a[i])
+#     else:
+#         odd.append(a[i])    
+# even.sort()
+# odd.sort()
+# a.clear()
+# a=even+odd
+# for i in range(len(a)):
+#     print(a[i],end="  ")
+
+
 a=[11,2,33,44,55,34,5,6,7,8]
-even=[]
-odd=[]
-for i in range(len(a)):
-    if a[i]%2==0:
-        even.append(a[i])
-    else:
-        odd.append(a[i])    
+even=[a[i] for i in range(len(a)) if a[i]%2==0]
+odd=[a[i] for i in range(len(a)) if a[i]%2!=0]
 even.sort()
 odd.sort()
-a.clear()
-a=even+odd
-for i in range(len(a)):
-    print(a[i],end="  ")
+a[:len(even)]=even
+a[len(odd):]=odd
+print(a)
