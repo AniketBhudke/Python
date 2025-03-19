@@ -66,3 +66,7 @@
 # print(f"Square={s_val}")
 # print(f"Cube={c_val}")
 # print(f"Cube Root={c_r_val}")
+
+
+a=[1,2,3,4,5,67,8]
+

@@ -440,3 +440,38 @@
 #         num //= 10  # Remove the last digit
 # print(result)        
       
+
+# n=6
+# lst=[]
+# lst.append(n)
+# while n==1:
+#     if n%2==0:
+#         lst.append(n//2)
+#         n=lst[-1]
+#     else:
+#         lst.append(n*3+1)
+#         n=lst[-1]
+# print(lst)            
+
+
+# n=5
+# b=bin(n)
+# print(b)
+# lst=list(str(b))
+# print(lst)
+# for i in range(len(lst)):
+#     if lst[i]=='0':
+#         lst[i]='1'
+#     else:
+#         lst[i]='0'
+# print("".join(lst))     
+# 
+
+
+
+from collections import Counter
+arr=[11,22,33,44,55,11,22,33]
+count=Counter(arr)
+for val in arr:
+    if count[val]==1:
+        print(val)
