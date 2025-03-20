@@ -469,9 +469,27 @@
 
 
 
-from collections import Counter
-arr=[11,22,33,44,55,11,22,33]
-count=Counter(arr)
-for val in arr:
-    if count[val]==1:
-        print(val)
+# from collections import Counter
+# arr=[11,22,33,44,55,11,22,33]
+# count=Counter(arr)
+# for val in arr:
+#     if count[val]==1:
+#         print(val)
+
+
+# arr1=[1,3,5,6,8]
+# arr2=[3,5,6,3,4]
+# count=0
+# for i in range(len(arr1)):
+#     for j in range(len(arr2)):
+#         if arr1[i]+arr2[j]==10:
+#             count=count+1
+# print(count)
+
+target=6
+nums=[1,2,3,4,5,6,722,4,5]
+for i in range(1):
+            for j in range(len(nums)):
+                if nums[i]+nums[j]==target:
+                    print([i,j])
+        
