@@ -488,8 +488,4 @@
 
 target=6
 nums=[1,2,3,4,5,6,722,4,5]
-for i in range(1):
-            for j in range(len(nums)):
-                if nums[i]+nums[j]==target:
-                    print([i,j])
-        
+print(sum(nums))        
