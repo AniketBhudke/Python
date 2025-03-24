@@ -490,12 +490,28 @@
 # nums=[1,2,3,4,5,6,722,4,5]
 # print(sum(nums))        
 
-lst=[12,11,44,67,8,9]
-lst1=[]
-s=[]
-for val in lst:
-    lst1=list(str(val))
-    for val1 in lst1:
-        if val1 not in s:
-            s.append(val1)
-print(" ".join(s))            
+# lst=[12,11,44,67,8,9]
+# lst1=[]
+# s=[]
+# for val in lst:
+#     lst1=list(str(val))
+#     for val1 in lst1:
+#         if val1 not in s:
+#             s.append(val1)
+# print(" ".join(s))            
+
+
+# a=[1,2,5,6]
+# for a[-1] in a:
+#     print(a[-1])
+
+# a,b='20'
+# b,c='68'
+# print(a+b+c)
+
+a=[1,2,5,6]
+for i in a:
+    a.remove(i)
+print(a)    
+
+
