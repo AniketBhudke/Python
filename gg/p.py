@@ -515,3 +515,10 @@ for i in a:
 print(a)    
 
 
+
+a=[1,2,5,6]
+for i in a:
+    a.remove(i)
+print(a)    
+
+
