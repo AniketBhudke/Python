@@ -509,16 +509,21 @@
 # b,c='68'
 # print(a+b+c)
 
-a=[1,2,5,6]
-for i in a:
-    a.remove(i)
-print(a)    
+# a=[1,2,5,6]
+# for i in a:
+#     a.remove(i)
+# print(a)    
 
 
 
-a=[1,2,5,6]
-for i in a:
-    a.remove(i)
-print(a)    
+# a=[1,2,5,6]
+# for i in a:
+#     a.remove(i)
+# print(a)    
 
 
+# from sys import argv
+# print(argv)
+
+t,v=[1,2,33]
+print(t,v)
