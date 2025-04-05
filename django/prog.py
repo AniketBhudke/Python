@@ -23,3 +23,12 @@ while n>0:
     print(n)
     n-=2 if n%3==0 else 1
     
+lst=[11,'bool',54,{},33,[],""]
+print(list(filter(bool,lst)))   
+
+i=[1,0,2,0,3,0]
+for val in i:
+    if val ==0:
+        i.remove(val)
+        i.append(val)
+print(i)        
