@@ -40,3 +40,12 @@ for val in i:
         i.remove(val)
         i.append(val)
 print(i)        
+
+
+
+i=[1,0,2,0,3,0]
+for val in i:
+    if val ==0:
+        i.remove(val)
+        i.append(val)
+print(i)        b
