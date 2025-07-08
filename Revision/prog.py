@@ -27,4 +27,5 @@ class a:
 p1 = a("aniket")        
 del p1
 
+print("hello")
         
