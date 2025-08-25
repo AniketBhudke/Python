@@ -1,39 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
-</head>
-<body>
-    <h2>Registration Form</h2>
-    <form action="/submit" method="POST">
-        <!-- Full Name -->
-        <label for="fullname">Full Name:</label><br>
-        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+<!-- This code is written for your Framer website using Frames, Text, Buttons, and Image Blocks. -->
+<!-- Copy-paste section by section into your Framer canvas. Adjust layout styles via Framer's right-side panel. -->
 
-        <!-- Email Address -->
-        <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+<!-- ================= HOME PAGE ================= -->
+<!-- Hero Section -->
+<h1>F1 STREETWEAR COLLECTION</h1>
+<p>Shop the fastest fashion on the street.</p>
+<a href="/category"><button>View All</button></a>
 
-        <!-- Password -->
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+<!-- Category Section (First Functional) -->
+<div style="display: flex; gap: 16px;">
+  <a href="/category"><button>Tees</button></a>
+  <button>Jackets</button>
+  <button>Caps</button>
+  <button>Accessories</button>
+  <button>Limited</button>
+</div>
 
-        <!-- Gender -->
-        <label for="gender">Gender:</label><br>
-        <input type="radio" id="male" name="gender" value="Male"> Male<br>
-        <input type="radio" id="female" name="gender" value="Female"> Female<br>
-        <input type="radio" id="other" name="gender" value="Other"> Other<br><br>
+<!-- ================= CATEGORY PAGE ================= -->
+<h1>Tees Collection</h1>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+  <a href="/product">
+    <div>
+      <img src="https://placehold.co/200x250?text=Speed+Tee" />
+      <p>Speed Tee</p>
+    </div>
+  </a>
+  <a href="/product">
+    <div>
+      <img src="https://placehold.co/200x250?text=Turbo+Tee" />
+      <p>Turbo Tee</p>
+    </div>
+  </a>
+  <a href="/product">
+    <div>
+      <img src="https://placehold.co/200x250?text=Drift+Tee" />
+      <p>Drift Tee</p>
+    </div>
+  </a>
+  <a href="/product">
+    <div>
+      <img src="https://placehold.co/200x250?text=Pitstop+Tee" />
+      <p>Pitstop Tee</p>
+    </div>
+  </a>
+  <a href="/product">
+    <div>
+      <img src="https://placehold.co/200x250?text=Flame+Tee" />
+      <p>Flame Tee</p>
+    </div>
+  </a>
+  <a href="/product">
+    <div>
+      <img src="https://placehold.co/200x250?text=Track+Tee" />
+      <p>Track Tee</p>
+    </div>
+  </a>
+</div>
 
-        <!-- Hobbies -->
-        <label for="hobbies">Hobbies:</label><br>
-        <input type="checkbox" id="reading" name="hobbies" value="Reading"> Reading<br>
-        <input type="checkbox" id="traveling" name="hobbies" value="Traveling"> Traveling<br>
-        <input type="checkbox" id="gaming" name="hobbies" value="Gaming"> Gaming<br><br>
+<!-- ================= PRODUCT PAGE ================= -->
+<h1>Product Page</h1>
+<input type="text" placeholder="Search Tees" id="searchBox" oninput="filterProducts()" />
+<p id="emptyMessage" style="display: none; color: red;">No items found.</p>
+<div id="productGrid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+  <div data-name="Speed Tee">
+    <img src="https://placehold.co/200x250?text=Speed+Tee" />
+    <p>Speed Tee</p>
+  </div>
+  <div data-name="Turbo Tee">
+    <img src="https://placehold.co/200x250?text=Turbo+Tee" />
+    <p>Turbo Tee</p>
+  </div>
+  <div data-name="Drift Tee">
+    <img src="https://placehold.co/200x250?text=Drift+Tee" />
+    <p>Drift Tee</p>
+  </div>
+  <div data-name="Pitstop Tee">
+    <img src="https://placehold.co/200x250?text=Pitstop+Tee" />
+    <p>Pitstop Tee</p>
+  </div>
+  <div data-name="Flame Tee">
+    <img src="https://placehold.co/200x250?text=Flame+Tee" />
+    <p>Flame Tee</p>
+  </div>
+  <div data-name="Track Tee">
+    <img src="https://placehold.co/200x250?text=Track+Tee" />
+    <p>Track Tee</p>
+  </div>
+</div>
 
-        <!-- Submit Button -->
-        <input type="submit" value="Submit">
-    </form>
-</body>
-</html>
+<script>
+function filterProducts() {
+  const input = document.getElementById('searchBox').value.toLowerCase();
+  const grid = document.getElementById('productGrid');
+  const cards = grid.querySelectorAll('div[data-name]');
+  let matchCount = 0;
+
+  cards.forEach(card => {
+    const name = card.dataset.name.toLowerCase();
+    if (name.includes(input)) {
+      card.style.display = 'block';
+      matchCount++;
+    } else {
+      card.style.display = 'none';
+    }
+  });
+
+  document.getElementById('emptyMessage').style.display = matchCount === 0 ? 'block' : 'none';
+}
+</script>

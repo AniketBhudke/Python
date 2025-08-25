@@ -2080,9 +2080,10 @@ a=np.arange(3,32)
 
 #2-d
 
-a=np.arange(9).reshape(3,3)
-b=np.arange(9).reshape(3,3)
-print(a)
-print(b)
-c=np.add(a,b)
-print(c)
+# a=np.arange(9).reshape(3,3)
+# b=np.arange(9).reshape(3,3)
+# print(a)
+# print(b)
+# c=np.add(a,b)
+# print(c)
+
