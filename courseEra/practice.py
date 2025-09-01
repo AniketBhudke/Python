@@ -28,18 +28,28 @@
 # for i in [5, 4, 3, 2, 1] :
 #     tot = tot + 1
 #     print(tot)
-# print(tot)\\
+# # print(tot)\\
 
-zork = 0
-for thing in [9, 41, 12, 3, 74, 15] :
-    zork = zork + thing
-print('After', zork)
+# zork = 0
+# for thing in [9, 41, 12, 3, 74, 15] :
+#     zork = zork + thing
+# print('After', zork)
 
-arr=(12,3,4,5)
-x=8
-for val in arr:
-    if len(arr)>2:
-        if val == x:
-            print(arr.index(val))
+# arr=(12,3,4,5)
+# x=8
+# for val in arr:
+#     if len(arr)>2:
+#         if val == x:
+#             print(arr.index(val))
+#     else:
+#         print(0)
+
+def fibonacci(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
     else:
-        print(0)
+        return fibonacci(n-1) + fibonacci(n-2)
+ans=fibonacci(4)
+print(ans)

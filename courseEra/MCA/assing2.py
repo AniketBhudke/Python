@@ -47,31 +47,19 @@
 #     for j in range(2,i):
 #         if i%j!=0:
 #             s="It is not Prime"
-# print(s)
+#         print(i)    
 
-import sys
 
-def fizzbuzz(a):
-    if a % 15 == 0:
-        return "FizzBuzz"
-    if a % 3 == 0:
-        return "Fizz"
-    if a % 5 == 0:
-        return "Buzz"
-    return str(a)
+# n=int(input("Enter A Number:"))
+# for i in range(1,n+1):
+#     for j in range(1,i+1):
+#         print(j,end="")
+#     print()
 
-data = sys.stdin.read().strip().split()
-if not data:
-    sys.exit()
 
-nums = list(map(int, data))
-
-# If first number equals the count of remaining numbers, treat it as T
-if len(nums) > 1 and nums[0] == len(nums) - 1:
-    arr = nums[1:]
-else:
-    # Otherwise treat every number in input as a testcase (covers single input too)
-    arr = nums
-
-results = [fizzbuzz(a) for a in arr]
-print("\n".join(results))
+n=int(input("Enter A Number:"))
+a=1
+for i in range(a,n+1,1):
+    for j in range(1,i,2):
+        print(j,end="")
+    print()
