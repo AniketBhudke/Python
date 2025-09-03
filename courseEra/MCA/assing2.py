@@ -57,9 +57,9 @@
 #     print()
 
 
-n=int(input("Enter A Number:"))
-a=1
-for i in range(a,n+1,1):
-    for j in range(1,i,2):
-        print(j,end="")
-    print()
+# n=int(input("Enter A Number:"))
+# a=1
+# for i in range(a,n+1,1):
+#     for j in range(1,i,2):
+#         print(j,end="")
+#     print()
