@@ -73,13 +73,13 @@
 #     print(i)
     
 # print(70*"-")
-bound_by ="[]"
-tag_name ="tag"
-bound_by=list(bound_by)
-print(bound_by)
-if len(bound_by)==2:
-    bound_by.insert(1,tag_name)
-result="".join(bound_by)
-print(result)
+# bound_by ="[]"
+# tag_name ="tag"
+# bound_by=list(bound_by)
+# print(bound_by)
+# if len(bound_by)==2:
+#     bound_by.insert(1,tag_name)
+# result="".join(bound_by)
+# print(result)
 
 

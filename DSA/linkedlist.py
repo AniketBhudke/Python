@@ -290,39 +290,71 @@
 # print("None")
 
 
+# class Node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+#         self.prev=None
+
+# node1=Node(1)
+# node2=Node(2)
+# node3=Node(3)
+
+# node1.next=node2
+# node2.next=node3
+# node3.next=node1
+
+# node1.prev=node3
+# node2.prev=node1
+# node3.prev=node2
+
+
+# def add_beginning(head,data):
+#     new_node=Node(data)
+#     new_node.next=head
+#     return new_node
+
+# def display(head):
+#     current=node1
+#     while current is not None:
+#         print(current.data,end="->")
+#     print("None")
+
+# head=None
+# head = add_beginning(20)
+# head = add_beginning(30)
+# head = add_beginning(40)
+# display(head)
+
+#aad atvthe specific
 class Node:
     def __init__(self,data):
         self.data=data
         self.next=None
-        self.prev=None
 
-node1=Node(1)
-node2=Node(2)
-node3=Node(3)
+def insert_at_position(head, data, position):
+    new_node = Node(data)
+    # Case 2: Insert at given position
+    current = head
+    count = 1
+    while current and count < position - 1:
+        current = current.next
+        count += 1
 
-node1.next=node2
-node2.next=node3
-node3.next=node1
+    if not current:
+        print("Position out of range")
+        return head
 
-node1.prev=node3
-node2.prev=node1
-node3.prev=node2
+    new_node.next = current.next
+    current.next = new_node
+    return head
 
-
-def add_beginning(head,data):
-    new_node=Node(data)
-    new_node.next=head
-    return new_node
-
+# Display linked list
 def display(head):
-    current=node1
-    while current is not None:
-        print(current.data,end="->")
+    current = head
+    while current:
+        print(current.data, end=" -> ")
+        current = current.next
     print("None")
 
-head=None
-head = add_beginning(20)
-head = add_beginning(30)
-head = add_beginning(40)
-display(head)
 
