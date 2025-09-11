@@ -327,34 +327,174 @@
 # display(head)
 
 #aad atvthe specific
+# class Node:
+#     def __init__(self, data):
+#         self.data = data
+#         self.next = None
+
+# def insert_at_position(head, data, position):
+#     new_node = Node(data)
+
+#     # Case 1: Insert at beginning
+#     if position == 1:
+#         new_node.next = head
+#         return new_node
+
+#     # Case 2: Insert at any other position
+#     current = head
+#     count = 1
+#     while current and count < position - 1:
+#         print("count",count,"position",position)
+#         current = current.next
+#         count += 1
+
+#     if not current:
+#         print("Position out of range")
+#         return head
+
+#     new_node.next = current.next
+#     current.next = new_node
+#     return head
+
+# def display(head):
+#     current = head
+#     while current:
+#         print(current.data, end=" -> ")
+#         current = current.next
+#     print("None")
+
+# head = None
+
+# # Creating initial list: 10 -> 20 -> 30
+# head = Node(10)
+# head.next = Node(20)
+# head.next.next = Node(30)
+
+# print("Original List:")
+# display(head)
+
+# # Insert 25 at position 3
+# head = insert_at_position(head, 25, 3)
+
+# print("After inserting 25 at position 3:")
+# display(head)
+
+# #insert at end
+# class Node:
+#     def __init__(self, data):
+#         self.data = data
+#         self.next = None
+
+
+# def insert_at_end(head, data):
+#     new_node = Node(data)
+
+#     # Case 1: If list is empty
+#     if head is None:
+#         return new_node
+
+#     # Case 2: Traverse to the last node
+#     current = head
+#     while current.next:   # move until last bogie
+#         current = current.next
+
+#     # Link last node to new node
+#     current.next = new_node
+#     return head
+
+
+# def display(head):
+#     current = head
+#     while current:
+#         print(current.data, end=" -> ")
+#         current = current.next
+#     print("None")
+
+# head = None
+
+# # First node
+# head = insert_at_end(head, 10)
+
+# # Add more nodes
+# head = insert_at_end(head, 20)
+# head = insert_at_end(head, 30)
+# head = insert_at_end(head, 40)
+
+# display(head)
+
+
+# class Node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+
+# def insert_at_specific_node(head,data,position):
+#     new_node = Node(data)
+
+#     if position == 1:
+#         new_node.next = head
+#         new_node.next=head
+#         return new_node
+#     currnet = head
+#     count = 1
+#     while currnet and count< position -1:
+#         currnet = currnet.next
+#         count += 1
+
+#     if not currnet:
+#         print("Position out of range")
+#         return head
+    
+#     new_node.next = currnet.next
+#     currnet.next = new_node
+#     return head
+
+
+    
+# def display(head):
+#     current = head
+#     while current:
+#         print(current.data, end=" -> ")
+#         current = current.next
+#     print("None")
+
+# head = None
+
+# # # Creating initial list: 10 -> 20 -> 30
+# head = Node(10)
+# head.next = Node(20)
+# head.next.next = Node(30)
+
+# print("Original List:")
+# display(head)
+
+# # Insert 25 at position 3
+# head = insert_at_specific_node(head, 200, 1)
+# display(head)
+
 class Node:
     def __init__(self,data):
         self.data=data
         self.next=None
 
-def insert_at_position(head, data, position):
+def add_specific_position(head,data,position):
     new_node = Node(data)
-    # Case 2: Insert at given position
-    current = head
-    count = 1
-    while current and count < position - 1:
-        current = current.next
-        count += 1
 
-    if not current:
+    if position == 1:
+        new_node.next = head
+        new_node.next = head
+        return new_node
+    
+    Current = head
+    count = 1
+    while Current and count < position - 1:
+        Current = Current.next
+        count += 1
+    
+    if not Current:
         print("Position out of range")
         return head
-
-    new_node.next = current.next
-    current.next = new_node
+    
+    new_node.next = Current.next
+    Current.next = new_node
     return head
-
-# Display linked list
-def display(head):
-    current = head
-    while current:
-        print(current.data, end=" -> ")
-        current = current.next
-    print("None")
-
-

@@ -9,9 +9,11 @@ import numpy.random as r
 # x=r.rand(3)
 # print(x)
 
+# import numpy.random as r
 # x=r.rand(3,3)
 # print(x)
 
+import numpy.random as r
 # x=r.rand(2,3,3)
 # print(x)
 
@@ -24,5 +26,5 @@ import numpy.random as r
 # print(x)
 
 #normal
-# x=r.normal(loc=4,scale=55,size=(4,5))
-# print(x)
+x=r.normal(loc=4,scale=55,size=(4,5))
+print(x)
