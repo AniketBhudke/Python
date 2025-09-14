@@ -28,3 +28,6 @@ import numpy.random as r
 #normal
 x=r.normal(loc=4,scale=55,size=(4,5))
 print(x)
+
+x=r.normal(loc=4,scale=55,size=(4,5))
+print(x)
