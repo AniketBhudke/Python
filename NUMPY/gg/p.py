@@ -202,3 +202,7 @@ num1=22
 num2=55
 ind1=arr.index(num1)
 print(ind1)
+
+
+x=r.normal(loc=4,scale=55,size=(4,5))
+print(x)
