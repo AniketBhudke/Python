@@ -197,12 +197,23 @@
 #         return ind    
 #         return -1
 
-arr=[11,22,33,44,55,66]
-num1=22
-num2=55
-ind1=arr.index(num1)
-print(ind1)
+# arr=[11,22,33,44,55,66]
+# num1=22
+# num2=55
+# ind1=arr.index(num1)
+# print(ind1)
 
 
-x=r.normal(loc=4,scale=55,size=(4,5))
-print(x)
+# x=r.normal(loc=4,scale=55,size=(4,5))
+# print(x)
+
+class P:
+    a=10
+    def __init__(self):
+        self.b = 20
+class C(P):
+    c=30
+    def __init__(self):
+        self.d=40
+c1=C()
+print(c1.a,c1,b,c1.c,c1.d)
