@@ -97,9 +97,26 @@ import numpy as np
 # print(z)
 
 #vstack---vertical
-a=np.arange(1,13).reshape(2,3,2)
-b=np.arange(11,23).reshape(2,3,2)
-z=np.hstack((a,b))
-print(z)
+# a=np.arange(1,13).reshape(2,3,2)
+# b=np.arange(11,23).reshape(2,3,2)
+# z=np.hstack((a,b))
+# print(z)
+
+a=[1,2,3,4,5,6,7,89]
+import numpy as np
+b=np.array(a)
+print(b)
+
+print(np.arange(1,10))
+
+print(np.zeros(10))
+
+print(np.ones(10))
+
+print(np.linspace(1,11,))
+
+print(np.identity(6))
+
+print(np.eye(5,k=2))
 
 

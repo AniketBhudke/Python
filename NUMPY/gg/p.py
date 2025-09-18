@@ -212,6 +212,7 @@ class P:
     def __init__(self):
         self.b = 20
 class C(P):
+    super().__init__()
     c=30
     def __init__(self):
         self.d=40
